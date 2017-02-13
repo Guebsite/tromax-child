@@ -1,0 +1,102 @@
+/*
+Theme Name: Rent - Obregón
+Author: @ReynierNR
+Version: 0.1
+Description: Tema Hijo para Rent-Obregón
+Template: tromax
+Author URI: http://www.guebsite.com
+*/
+
+@import url(../tromax/style.css);
+
+
+/*Ocultamos la barra superior del Padre*/
+#top-bar { display: none; }
+
+
+.site-branding {
+  padding-left: 30px !important;
+}
+
+#masthead #text-title-desc {
+  display:none;
+}
+
+header#masthead {
+    text-align: left !important;
+    background: transparent;
+    
+}
+
+nav#site-navigation {
+    background: #B7669E;
+}
+
+.main-navigation ul {
+    background-color: transparent;
+}
+
+#site-navigation ul li a {
+    padding: 10px 10px !important;
+    color: white;
+    font-size: 18px !important;
+}
+
+#site-navigation .fa {
+    padding: 10px 5px 10px 0 !important;
+}
+
+
+
+/*responsive nav max width 600*/
+.slicknav_menu {
+    background: #1a1a1a;
+    border-bottom: 1px white solid;
+    text-align: center;
+}
+
+/*Ancho de l boton menu en mobile*/
+.slicknav_btn {
+    background: transparent !important;
+    border: none !important;
+    width: 100%;
+    
+}
+/*posicion de las tres barras en mobile*/
+span.slicknav_icon {
+    float: right !important;
+}
+
+/*el color de fondo del boton menu en mobile*/
+.slicknav_btn {
+    background: transparent !important;
+    float: right !important;
+}
+
+/*Relleno del texto menu en mobile*/
+span.slicknav_menutxt {
+    padding-left: 8px !important;
+}
+/* color de los botones en mobile*/
+.slicknav_nav a {
+    color: #ffffff !important;
+}
+
+/*fondo de botones en mobile*/
+.slicknav_nav a:hover {
+    background: #CCCED1 !important;
+    color: black !important;
+}
+
+.slicknav_nav li {
+    font-size: 1.2em;
+    text-align: left;
+    padding: 3px 0px;
+    
+}
+
+.slicknav_nav li:hover {
+    background: #CCCED1 !important;
+    
+}
+
