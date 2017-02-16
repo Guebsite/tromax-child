@@ -1,3 +1,6 @@
 tromax-child
 
-esto es un cambio nuevo en readme
+Tipografía para el proyectos es:
+
+Swis721exbt
+
