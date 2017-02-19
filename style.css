@@ -82,7 +82,7 @@ span.slicknav_menutxt {
     color: #ffffff !important;
 }
 
-/*fondo de botones en mobile*/
+/*fondo de botones de navegación en mobile*/
 .slicknav_nav a:hover {
     background: #CCCED1 !important;
     color: black !important;
@@ -100,3 +100,156 @@ span.slicknav_menutxt {
     
 }
 
+/*sidebar*/
+#secondary { padding-bottom: 30px;
+             overflow: hidden;
+}
+
+/*Botones de Categorías*/
+
+
+ul.product-categories li {
+    border: none;
+    margin: 6px 1% 6px 1%;
+    height: 120px !important;
+    width: 47%;
+    float:left;
+    border-radius: 10px;
+    background: #B7669E;
+    
+}
+
+/*Posicion del contador de Productos en cat*/
+
+ul.product-categories li span.count { float:right;
+                                      position: relative;
+                                      top: -105px;
+                                      right: 7px;
+                                      color: #ffffff;}
+
+ul.product-categories li a {  width: 100%;
+                              display: block;
+                              float: left;
+                              height: 100%;
+                              padding-top: 75%;
+                              color: #f2f2f2 !important;
+                              font-size: 0.9em;
+                              text-align: center;}
+
+
+#secondary h1.widget-title {
+    text-align: center;
+}
+
+/* propiedades del fondo para todas las categorías */
+
+ul.product-categories li.cat-item {   background-repeat: no-repeat;
+                                      background-size: 50%;
+                                      background-position: center 20px;}
+
+
+/*Imágenes de fondo para las categorías*/
+
+ul.product-categories li.cat-item-6 { background-image: url(imgcat/casaventa.png); }
+ul.product-categories li.cat-item-7 { background-image: url(imgcat/casaenrenta.png); }
+ul.product-categories li.cat-item-9 { background-image: url(imgcat/oficinarenta.png); }
+ul.product-categories li.cat-item-10 { background-image: url(imgcat/oficinaenventa.png); }
+ul.product-categories li.cat-item-11 { background-image: url(imgcat/terrenoenrenta.png); }
+ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenventa.png); }
+
+
+
+/*MEDIA QUERIES*/
+
+/*480 breakpoint*/
+@media only screen and (min-width: 480px) {
+    
+    ul.product-categories li { height: 150px !important;}
+    
+    ul.product-categories li a { padding-top: 65%;
+                                 font-size: 1em;}
+
+ 
+ul.product-categories li span.count { top: -130px;
+                                      right: 13px;}
+    
+    
+    
+}
+
+/*600 breakpoint*/
+@media only screen and (min-width: 600px) {
+    
+ ul.product-categories li { height: 200px !important;}    
+ ul.product-categories li a { padding-top: 63%;
+                                 font-size: 1.5em;}   
+ 
+ul.product-categories li span.count { top: -178px;
+                                      font-size: 1.5em;}
+
+#secondary h1.widget-title {
+    font-size: 1.8em !important;
+    padding-bottom: 5px;
+}    
+    
+}
+
+/*640 breakpoint*/
+@media only screen and (min-width: 640px) {
+    
+ ul.product-categories li { height: 210px !important;}    
+ul.product-categories li span.count { top: -190px;}
+}
+
+
+
+/*768 breakpoint*/
+@media only screen and (min-width: 768px) {
+    
+ ul.product-categories li { width: 31%;
+                             height: 180px !important;}    
+ul.product-categories li span.count { top: -160px;}
+}
+
+
+
+/*1024 breakpoint*/
+@media only screen and (min-width: 1024px) {
+    
+ ul.product-categories li { width: 48%;
+                            height: 120px !important;}
+    
+ul.product-categories li a { padding-top: 70%;
+                                 font-size: 0.9em;}
+    
+ul.product-categories li span.count { top: -105px;
+                                      right: 5px;
+                                      font-size: 0.9em;}
+}
+
+/*1280 breakpoint*/
+@media only screen and (min-width: 1280px) {
+    
+ ul.product-categories li { width: 48%;
+                            height: 145px !important;}
+    
+ul.product-categories li a { padding-top: 70%;
+                                 font-size: 1.1em;}
+    
+ul.product-categories li span.count { top: -130px;
+                                      right: 8px;
+                                      font-size: 1.1em;}
+}
+
+/*1366 breakpoint*/
+@media only screen and (min-width: 1366px) {
+    
+ ul.product-categories li { width: 45%;
+                            float: right;
+                            height: 140px !important;}
+    
+
+ul.product-categories li span.count { top: -120px;
+                                      right: 8px;
+                                      font-size: 1.1em;}
+}
