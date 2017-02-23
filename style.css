@@ -14,6 +14,14 @@ Author URI: http://www.guebsite.com
 #top-bar { display: none; }
 
 
+/*Eliminar valoraciones Woocommerce*/
+
+ul.tabs li.reviews_tab {
+    display: none !important;
+}
+
+
+
 .site-branding {
   padding-left: 30px !important;
 }
@@ -157,7 +165,73 @@ ul.product-categories li.cat-item-10 { background-image: url(imgcat/oficinaenven
 ul.product-categories li.cat-item-11 { background-image: url(imgcat/terrenoenrenta.png); }
 ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenventa.png); }
 
+/*Compro, Rento y Vendo*/
 
+#opciones h5 { text-align: center;
+             font-family: tahoma;
+             font-size: 1.3em;
+             display:block;
+             width: 60%;
+             margin: 0px auto 0px auto !important;
+             padding: 20px 0px 0px 0px;
+             border-bottom: 1px solid black;
+             color:black;
+     }
+
+#opciones h5.elegir { margin: 0px auto 30px auto;
+                      padding: 0px 0px 30px 0px;
+                      border-bottom: none;
+                      font-size: 1em;
+            }
+
+
+#opciones { width: 100%;
+            overflow: hidden;
+            min-height: 20px;
+            margin: 30px auto;
+            padding: 0px 0px 80px 0px;
+            border-top: 3px solid #9d588f;
+            border-bottom: 3px solid #9d588f;
+            background-color: #e0e0e0;}
+
+.ajuste { width: 100%;
+          height:150;}
+
+.quiero { width: 75%;
+          height: 150px;
+          margin: 0px auto 30px auto;
+          text-align: center;
+          font-family: calibri;
+          font-size: 1.3em;
+          border-bottom-left-radius: 50px;
+          border-bottom-right-radius: 50px;
+          background-color: #9d588f; 
+          }
+
+#opciones a { width: 100%;
+              height: 100%;
+              text-decoration: none;
+              color:#9d588f;
+              display: block;
+            
+            }
+
+#opciones h6 { display: block;
+               width: 100%;
+               height: 40px;
+               padding: 5px 0 15px 0;
+               margin: 0px;
+               font-size: 1.3em;
+               background: white;
+               border-bottom: 1px solid black;
+               border-top: 1px solid black;
+               }
+
+.quiero a:active { color:#FFFFFF; }
+.quiero p { font-size: 3em;
+            margin: 0px;
+            color:#FFFFFF;
+            }
 
 /*MEDIA QUERIES*/
 
@@ -173,7 +247,7 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
 ul.product-categories li span.count { top: -130px;
                                       right: 13px;}
     
-    
+.quiero { width: 60%; }    
     
 }
 
@@ -190,7 +264,21 @@ ul.product-categories li span.count { top: -178px;
 #secondary h1.widget-title {
     font-size: 1.8em !important;
     padding-bottom: 5px;
-}    
+}  
+    
+#opciones { padding: 0px 0px 40px 0px;}    
+    
+#opciones div.rentar { border-bottom-left-radius: 0px; }
+    
+#opciones div.comprar { border-bottom-right-radius: 0px; }
+
+.quiero { width: 95%;
+           
+          } 
+    
+.ajuste { width: 33.33%;
+          float: left;}    
+    
     
 }
 
@@ -209,6 +297,12 @@ ul.product-categories li span.count { top: -190px;}
  ul.product-categories li { width: 31%;
                              height: 180px !important;}    
 ul.product-categories li span.count { top: -160px;}
+    
+  #opciones h5 { width: 40%;}
+ .quiero { width: 90%; }   
+    
+    
+    
 }
 
 
@@ -225,6 +319,15 @@ ul.product-categories li a { padding-top: 70%;
 ul.product-categories li span.count { top: -105px;
                                       right: 5px;
                                       font-size: 0.9em;}
+    
+#opciones h5 { width: 30%; }
+    
+.quiero { width: 70%; }
+
+#opciones div.rentar { margin-left: 30%;}
+ 
+#opciones div.comprar { margin-right: 30%;}     
+    
 }
 
 /*1280 breakpoint*/
@@ -239,6 +342,15 @@ ul.product-categories li a { padding-top: 70%;
 ul.product-categories li span.count { top: -130px;
                                       right: 8px;
                                       font-size: 1.1em;}
+    
+  #opciones h5 { width: 25%; }
+    
+.quiero { width: 60%; }  
+    
+#opciones div.rentar { margin-left: 40%;}
+ 
+#opciones div.comprar { margin-right: 40%;}    
+    
 }
 
 /*1366 breakpoint*/
