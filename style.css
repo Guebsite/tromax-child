@@ -10,7 +10,29 @@ Author URI: http://www.guebsite.com
 @import url(../tromax/style.css);
 
 
-/**/
+/*TIPOGRAFIAS*/
+
+@font-face {
+    font-family: 'istok_webregular';
+    src: url(fonts/istokweb-regular-webfont.woff2) format('woff2'),
+         url(fonts/istokweb-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url(fonts/opensans-regular-webfont.woff2) format('woff2'),
+         url(fonts/opensans-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /*Ocultamos la barra superior del Padre*/
 #top-bar { display: none; }
@@ -224,12 +246,12 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
 /*Compro, Rento y Vendo*/
 
 #opciones h5 { text-align: center;
-             font-family: tahoma;
+             font-family: 'istok_webregular';
              font-size: 3em;
              display:block;
              width: 60%;
              margin: 0px auto 0px auto !important;
-             padding: 20px 0px 20px 0px;
+             padding: 10px 0px 40px 0px;
              /*border-bottom: 1px solid black;*/
              color:black;
      }
@@ -277,6 +299,7 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
                height: 40px;
                padding: 5px 0 15px 0;
                margin: 0px;
+               font-family: 'open_sansregular';
                font-size: 1.3em;
                background: white;
                border-bottom: 1px solid black;
@@ -284,7 +307,8 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
                }
 
 .quiero a:active { color:#FFFFFF; }
-.quiero p { font-size: 3em;
+.quiero p { font-size: 4em;
+            font-family: 'istok_webregular';
             margin: 0px;
             color:#FFFFFF;
             }
