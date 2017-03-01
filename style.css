@@ -225,20 +225,20 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
 
 #opciones h5 { text-align: center;
              font-family: tahoma;
-             font-size: 1.3em;
+             font-size: 3em;
              display:block;
              width: 60%;
              margin: 0px auto 0px auto !important;
-             padding: 20px 0px 0px 0px;
-             border-bottom: 1px solid black;
+             padding: 20px 0px 20px 0px;
+             /*border-bottom: 1px solid black;*/
              color:black;
      }
 
-#opciones h5.elegir { margin: 0px auto 30px auto;
+/*#opciones h5.elegir { margin: 0px auto 30px auto;
                       padding: 0px 0px 30px 0px;
                       border-bottom: none;
                       font-size: 1em;
-            }
+            }*/
 
 
 #opciones { width: 100%;
@@ -297,6 +297,10 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
 }
 
 #colophon { background-color: #B7669E !important;}
+
+#footer-sidebar .footer-column .widget a:hover {
+    background: #CCCED1 !important;
+}
 
 /*MEDIA QUERIES*/
 
@@ -362,7 +366,7 @@ ul.product-categories li span.count { top: -190px;}
                              height: 180px !important;}    
 ul.product-categories li span.count { top: -160px;}
     
-  #opciones h5 { width: 40%;}
+ 
  .quiero { width: 90%; }   
     
     
@@ -388,7 +392,7 @@ ul.product-categories li span.count { top: -105px;
                                       right: 5px;
                                       font-size: 0.9em;}
     
-#opciones h5 { width: 30%; }
+
     
 .quiero { width: 70%; }
 
@@ -411,7 +415,7 @@ ul.product-categories li span.count { top: -130px;
                                       right: 8px;
                                       font-size: 1.1em;}
     
-  #opciones h5 { width: 25%; }
+
     
 .quiero { width: 60%; }  
     

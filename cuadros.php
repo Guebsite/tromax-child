@@ -1,6 +1,5 @@
     <section id="opciones">
-       <h5>Que deseas Hacer</h5>
-       <h5 class="elegir">elige una opción</h5>
+       <h5>¿Que deseas hacer?</h5>
         <div class="ajuste">
             <div class="quiero rentar">
                 <a href="#">
