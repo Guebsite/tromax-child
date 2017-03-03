@@ -22,8 +22,6 @@ Author URI: http://www.guebsite.com
 }
 
 
-
-
 @font-face {
     font-family: 'open_sansregular';
     src: url(fonts/opensans-regular-webfont.woff2) format('woff2'),
@@ -32,7 +30,26 @@ Author URI: http://www.guebsite.com
     font-style: normal;
 
 }
+/*Títulos y parrafos*/
 
+#primary-mono h1.entry-title {
+    font-weight: bold;
+    font-family: 'istok_webregular';
+    font-size: 2.1em !important;
+}
+
+#primary-mono .entry-content {
+    font-family: 'open_sansregular';
+    font-size: 1.2em !important;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.page-content, .entry-content, .entry-summary {
+    margin: 0.7em 0 0;
+}
 
 /*Ocultamos la barra superior del Padre*/
 #top-bar { display: none; }
