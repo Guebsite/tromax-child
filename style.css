@@ -51,6 +51,12 @@ blockquote {
     margin: 0.7em 0 0;
 }
 
+.woocommerce div.product h1.product_title {
+    padding-top: 0;
+    font-family: 'istok_webregular';
+    font-weight: bold;
+}
+
 /*Ocultamos la barra superior del Padre*/
 #top-bar { display: none; }
 
