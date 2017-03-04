@@ -30,6 +30,13 @@ Author URI: http://www.guebsite.com
     font-style: normal;
 
 }
+
+/*Search & filter */
+
+.searchandfilter { background-color: #B7669E; }
+
+.page-description ul { min-height: 1px !important;}
+
 /*Títulos y parrafos*/
 
 #primary-mono h1.entry-title {
@@ -240,7 +247,12 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     color: white;
     font-weight: bold;
 }
+/*botones leer más*/
 
+.tromax .out-thumb .readmore a {
+    background: #B7669E !important;
+    
+}
 
 .autocomplete-suggestions {  margin-left: 6.5%;}
 
