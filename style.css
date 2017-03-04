@@ -309,6 +309,7 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
 .quiero a:active { color:#FFFFFF; }
 .quiero p { font-size: 4em;
             font-family: 'istok_webregular';
+            font-weight: bold;
             margin: 0px;
             color:#FFFFFF;
             }
