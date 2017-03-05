@@ -35,6 +35,25 @@ Author URI: http://www.guebsite.com
 
 .searchandfilter { background-color: #B7669E; }
 
+.searchandfilter ul { width: 90%;
+                      margin-bottom: 15px;
+                      margin-left: 3%;}
+
+.searchandfilter li { width: 100%;}
+
+.searchandfilter li input[type="text"] { width: 100%;
+                                         height: 40px;
+                                         padding: 5px;}
+
+.searchandfilter li select { width: 100%;
+                             height: 40px;
+                                         padding: 5px;}
+
+.searchandfilter li input[type="submit"] { width: 100%;
+                                           height: 40px;
+                                           padding: 5px;}
+
+
 .page-description ul { min-height: 1px !important;}
 
 /*Títulos y parrafos*/
@@ -48,6 +67,8 @@ Author URI: http://www.guebsite.com
 #primary-mono .entry-content {
     font-family: 'open_sansregular';
     font-size: 1.2em !important;
+    color: #272525 !important;
+    text-align: left !important;
 }
 
 blockquote {
@@ -76,6 +97,28 @@ blockquote {
 
 
 #site-logo img { width: 80%;}
+
+/*breadcums*/
+
+.woocommerce .woocommerce-breadcrumb a {
+    color: #B7669E !important;
+}
+
+a {
+    color: #B7669E !important;
+    cursor: pointer;
+}
+
+.woocommerce div.product span.price, .woocommerce div.product p.price {
+    color: #B7669E !important;
+    font-weight: bold;
+  
+}
+
+#site-navigation ul li a {
+    color: white !important;
+    
+}
 
 /*Eliminar valoraciones Woocommerce*/
 
@@ -251,6 +294,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 .tromax .out-thumb .readmore a {
     background: #B7669E !important;
+    color:white !important;
     
 }
 
@@ -358,10 +402,16 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
 
 #colophon { background-color: #B7669E !important;}
 
+#footer-sidebar .footer-column .widget a { color: white !important;}
+
 #footer-sidebar .footer-column .widget a:hover {
     background: #CCCED1 !important;
 }
 
+#colophon a {
+    color: white !important;
+    
+}
 /*MEDIA QUERIES*/
 
 /*480 breakpoint*/
