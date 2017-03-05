@@ -110,4 +110,4 @@
 		
 	
 		<div id="content" class="site-content container">
-<?php echo do_shortcode( '[searchandfilter fields="search,product_cat,taxonomyone,taxonomytwo" submit_label="Buscar"]' ); ?>
+<?php echo do_shortcode( '[searchandfilter fields="search,product_cat,taxonomyone,taxonomytwo" search_placeholder="Buscar propiedades en Cd.Obregón" submit_label="Buscar"]' ); ?>
