@@ -34,30 +34,36 @@ Author URI: http://www.guebsite.com
 /*Search & filter */
 
 .searchandfilter { background-color: #B7669E;
-                   min-height: 1px;}
-
-.searchandfilter div {  }
+                   min-height: 1px;
+                   margin-bottom: 15px;
+                   padding: 10px;}
 
 .searchandfilter ul { width: 100%;
-                      margin-bottom: 15px;
+                      margin-bottom: 10px;
+                      margin-top: 10px;
                       margin-left: auto;
                       margin-right: auto;}
 
 .searchandfilter li { width: 100%;
                     display: block !important;
-                    padding: 5px;}
+                    padding: 5px 0px;}
 
 .searchandfilter li input[type="text"] { width: 100%;
                                          height: 40px;
+                                         
                                          padding: 5px;}
 
 .searchandfilter li select { width: 100%;
                              height: 40px;
-                                         padding: 5px;}
+                             padding: 5px;}
 
 .searchandfilter li input[type="submit"] { width: 100%;
                                            height: 40px;
-                                           padding: 5px;}
+                                           padding: 5px;
+                                           font-size: 1em;
+                                           background-color: white !important;
+                                           color: black;
+                                           border-radius: 15px;}
 
 
 .page-description ul { min-height: 1px !important;}
@@ -161,7 +167,15 @@ nav#site-navigation {
     padding: 10px 5px 10px 0 !important;
 }
 
+/*Ocultar icono de busqueda rápida en phone*/
+#searchicon {
+    display: none;
+}
 
+/*eliminar 50px margen de cntenidos*/
+#content {
+    margin-top: 0px !important;
+}
 
 /*responsive nav max width 600*/
 .slicknav_menu {
@@ -461,7 +475,31 @@ ul.product-categories li span.count { top: -178px;
           } 
     
 .ajuste { width: 33.33%;
-          float: left;}    
+          float: left;}  
+    
+#content {
+    margin-top: 50px !important;
+}
+    
+.searchandfilter { padding-bottom: 0px;}
+.searchandfilter ul {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 0px;
+   
+}
+.searchandfilter li:nth-child(2), .searchandfilter li:nth-child(3) {
+    width: 50%;
+    float:left;
+    padding-right: 2px;
+    
+}
+
+.searchandfilter li input[type="submit"] {
+   
+    margin-top: 5px;
+    
+}
     
     
 }
@@ -486,7 +524,12 @@ ul.product-categories li span.count { top: -160px;}
  .quiero { width: 90%; }   
     
     
-    #yith-s { width: 60%;}   
+    #yith-s { width: 60%;} 
+    
+    
+    
+
+    
 }
 
 
@@ -514,7 +557,27 @@ ul.product-categories li span.count { top: -105px;
 
 #opciones div.rentar { margin-left: 30%;}
  
-#opciones div.comprar { margin-right: 30%;}     
+#opciones div.comprar { margin-right: 30%;}
+    
+.searchandfilter li {
+    width: 25%;
+    float:left;
+    padding-right: 2px;
+    
+}
+    
+.searchandfilter li:nth-child(2) {
+    width: 30%;
+}
+
+.searchandfilter li:nth-child(3) { width: 20%; }
+
+.searchandfilter li input[type="submit"] {
+    
+    margin-top: 0px;
+    border-radius: 5px;
+    
+}
     
 }
 
@@ -537,7 +600,13 @@ ul.product-categories li span.count { top: -130px;
     
 #opciones div.rentar { margin-left: 40%;}
  
-#opciones div.comprar { margin-right: 40%;}    
+#opciones div.comprar { margin-right: 40%;}
+    
+.searchandfilter li:nth-child(2) {
+    width: 25%;
+}
+
+.searchandfilter li:nth-child(3) { width: 25%; }
     
 }
 
