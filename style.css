@@ -237,20 +237,24 @@ span.slicknav_menutxt {
 /*Botones de Categorías*/
 
 
-ul.product-categories li {
-    border: none;
-    margin: 3px 1% 3px 1%;
-    height: 120px !important;
-    width: 47%;
-    float:left;
-    border-radius: 10px;
-    background: #B7669E;
+#secondary .widget ul li {padding: 9px 9px 9px 0px !important;
+                          font-size: 1.2em !important;}
+
+#secondary .widget ul li:first-child {
+    
+    border-top: solid 1px #f2f2f2;
     
 }
 
+#secondary .widget ul li:last-child { border-bottom: solid 1px #f2f2f2 !important; }
+
+
+#secondary .widget ul li a { padding: 0px 0px 0px 35px !important;
+                             height: 100% !important;}
+
 /*Posicion del contador de Productos en cat*/
 
-ul.product-categories li span.count { float:right;
+/*ul.product-categories li span.count { float:right;
                                       position: relative;
                                       top: -105px;
                                       right: 7px;
@@ -263,7 +267,7 @@ ul.product-categories li a {  width: 100%;
                               padding-top: 75%;
                               color: #f2f2f2 !important;
                               font-size: 0.9em;
-                              text-align: center;}
+                              text-align: center;}*/
 
 /*Encabezados widget*/
 #secondary h1.widget-title {
@@ -329,18 +333,23 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 /* propiedades del fondo para todas las categorías */
 
 ul.product-categories li.cat-item {   background-repeat: no-repeat;
-                                      background-size: 50%;
-                                      background-position: center 20px;}
+                                      background-size: 7%;
+                                      background-position: 5px 10px;}
 
 
 /*Imágenes de fondo para las categorías*/
 
-ul.product-categories li.cat-item-6 { background-image: url(imgcat/casaventa.png); }
-ul.product-categories li.cat-item-7 { background-image: url(imgcat/casaenrenta.png); }
-ul.product-categories li.cat-item-9 { background-image: url(imgcat/oficinarenta.png); }
-ul.product-categories li.cat-item-10 { background-image: url(imgcat/oficinaenventa.png); }
-ul.product-categories li.cat-item-11 { background-image: url(imgcat/terrenoenrenta.png); }
-ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenventa.png); }
+ul.product-categories li.cat-item-6 { background-image: url(imgcat/casas.png); }
+ul.product-categories li.cat-item-7 { background-image: url(imgcat/casas.png); }
+ul.product-categories li.cat-item-9 { background-image: url(imgcat/apartamentos.png); }
+ul.product-categories li.cat-item-10 { background-image: url(imgcat/apartamentos.png); }
+ul.product-categories li.cat-item-11 { background-image: url(imgcat/locales.png); }
+ul.product-categories li.cat-item-12 { background-image: url(imgcat/locales.png); }
+ul.product-categories li.cat-item-25 { background-image: url(imgcat/bodegas.png); }
+ul.product-categories li.cat-item-26 { background-image: url(imgcat/bodegas.png); }
+ul.product-categories li.cat-item-27 { background-image: url(imgcat/terrenos.png); }
+ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png); }
+
 
 /*Compro, Rento y Vendo*/
 
@@ -436,15 +445,13 @@ ul.product-categories li.cat-item-12 { background-image: url(imgcat/terrenoenven
 
 /*480 breakpoint*/
 @media only screen and (min-width: 480px) {
-    
-    ul.product-categories li { height: 150px !important;}
-    
-    ul.product-categories li a { padding-top: 65%;
-                                 font-size: 1em;}
 
- 
-ul.product-categories li span.count { top: -130px;
-                                      right: 13px;}
+    
+
+ul.product-categories li.cat-item {   background-size: 6%;
+                                      background-position: 5px 10px;}    
+    
+    
     
 .quiero { width: 60%; }    
     
@@ -453,12 +460,34 @@ ul.product-categories li span.count { top: -130px;
 /*600 breakpoint*/
 @media only screen and (min-width: 600px) {
     
- ul.product-categories li { height: 200px !important;}    
- ul.product-categories li a { padding-top: 63%;
-                                 font-size: 1.5em;}   
  
-ul.product-categories li span.count { top: -178px;
-                                      font-size: 1.5em;}
+#secondary .widget ul li.cat-item {   background-size:10%;
+                                      background-position: 5px 10px;}  
+    
+#secondary .widget ul li { width: 50%;
+                           box-sizing: border-box;
+                            float: left;
+                           height: 45px; 
+                           
+                          }
+    
+#secondary .widget ul li:nth-child(2)  { border-top: solid 1px #f2f2f2 !important;  }
+    
+    
+#secondary .widget ul li a {float: left;
+                            padding-left: 40px !important;
+                           
+                          }    
+
+/*#secondary .widget ul li:first-child {
+    
+    border-top: solid 1px #f2f2f2;
+    
+}
+
+#secondary .widget ul li:last-child { border-bottom: solid 1px #f2f2f2 !important; }*/    
+    
+    
 
 #secondary h1.widget-title {
     padding-bottom: 5px;
@@ -507,8 +536,8 @@ ul.product-categories li span.count { top: -178px;
 /*640 breakpoint*/
 @media only screen and (min-width: 640px) {
     
- ul.product-categories li { height: 210px !important;}    
-ul.product-categories li span.count { top: -190px;}
+ /*ul.product-categories li { height: 210px !important;}    
+ul.product-categories li span.count { top: -190px;}*/
 }
 
 
@@ -516,11 +545,23 @@ ul.product-categories li span.count { top: -190px;}
 /*768 breakpoint*/
 @media only screen and (min-width: 768px) {
     
- ul.product-categories li { width: 31%;
+ /*ul.product-categories li { width: 31%;
                              height: 180px !important;}    
-ul.product-categories li span.count { top: -160px;}
+ul.product-categories li span.count { top: -160px;}*/
     
- 
+
+#secondary .widget ul li.cat-item {   background-size:11%;
+                                      background-position: 5px 10px;}  
+    
+#secondary .widget ul li { height: 60px;
+                           padding: 17px 0px 10px 0px !important;}
+    
+    #secondary .widget ul li a { padding-left: 50px !important; }  
+    
+    
+    
+    
+    
  .quiero { width: 90%; }   
     
     
@@ -533,6 +574,27 @@ ul.product-categories li span.count { top: -160px;}
 }
 
 
+/*992 breakpoint*/
+@media only screen and (min-width: 992px) {
+    
+    
+#secondary .widget ul li.cat-item {   background-size:11%;
+                                      background-position: 5px 10px;}      
+
+#secondary .widget ul li { float: none;
+                          width: 100%;
+                          height: 50px;
+                          padding: 12px 0px 10px 0px !important;} 
+    
+    #secondary .widget ul li a { padding: 0px 0px 0px 90px; }
+    
+#secondary .widget ul li:nth-child(2) { border-top: 0px !important;}    
+    
+    
+    
+}
+
+
 
 /*1024 breakpoint*/
 @media only screen and (min-width: 1024px) {
@@ -541,7 +603,7 @@ ul.product-categories li span.count { top: -160px;}
     padding: 40px 0px 40px 30px !important;
 }
     
-ul.product-categories li { width: 48%;
+/*ul.product-categories li { width: 48%;
                             height: 120px !important;}
     
 ul.product-categories li a { padding-top: 70%;
@@ -549,9 +611,10 @@ ul.product-categories li a { padding-top: 70%;
     
 ul.product-categories li span.count { top: -105px;
                                       right: 5px;
-                                      font-size: 0.9em;}
-    
+                                      font-size: 0.9em;}*/
 
+    
+    
     
 .quiero { width: 70%; }
 
@@ -584,7 +647,7 @@ ul.product-categories li span.count { top: -105px;
 /*1280 breakpoint*/
 @media only screen and (min-width: 1280px) {
     
- ul.product-categories li { width: 48%;
+ /*ul.product-categories li { width: 48%;
                             height: 145px !important;}
     
 ul.product-categories li a { padding-top: 70%;
@@ -592,7 +655,7 @@ ul.product-categories li a { padding-top: 70%;
     
 ul.product-categories li span.count { top: -130px;
                                       right: 8px;
-                                      font-size: 1.1em;}
+                                      font-size: 1.1em;}*/
     
 
     
@@ -613,12 +676,12 @@ ul.product-categories li span.count { top: -130px;
 /*1366 breakpoint*/
 @media only screen and (min-width: 1366px) {
     
- ul.product-categories li { width: 45%;
+ /*ul.product-categories li { width: 45%;
                             float: right;
                             height: 140px !important;}
     
 
 ul.product-categories li span.count { top: -120px;
                                       right: 8px;
-                                      font-size: 1.1em;}
+                                      font-size: 1.1em;}*/
 }
