@@ -252,22 +252,14 @@ span.slicknav_menutxt {
 #secondary .widget ul li a { padding: 0px 0px 0px 35px !important;
                              height: 100% !important;}
 
+#secondary .widget ul li a:active { text-decoration: underline; }
+
 /*Posicion del contador de Productos en cat*/
 
-/*ul.product-categories li span.count { float:right;
-                                      position: relative;
-                                      top: -105px;
-                                      right: 7px;
-                                      color: #ffffff;}
+ul.product-categories li span.count { color: #B7669E;
+                                      margin-left: 4px;}
 
-ul.product-categories li a {  width: 100%;
-                              display: block;
-                              float: left;
-                              height: 100%;
-                              padding-top: 75%;
-                              color: #f2f2f2 !important;
-                              font-size: 0.9em;
-                              text-align: center;}*/
+
 
 /*Encabezados widget*/
 #secondary h1.widget-title {
@@ -556,16 +548,13 @@ ul.product-categories li span.count { top: -160px;}*/
 #secondary .widget ul li { height: 60px;
                            padding: 17px 0px 10px 0px !important;}
     
-    #secondary .widget ul li a { padding-left: 50px !important; }  
+#secondary .widget ul li a { padding-left: 50px !important; }  
     
     
+.quiero { width: 90%; }   
     
     
-    
- .quiero { width: 90%; }   
-    
-    
-    #yith-s { width: 60%;} 
+#yith-s { width: 60%;} 
     
     
     
@@ -613,9 +602,6 @@ ul.product-categories li span.count { top: -105px;
                                       right: 5px;
                                       font-size: 0.9em;}*/
 
-    
-    
-    
 .quiero { width: 70%; }
 
 #opciones div.rentar { margin-left: 30%;}
@@ -656,8 +642,8 @@ ul.product-categories li a { padding-top: 70%;
 ul.product-categories li span.count { top: -130px;
                                       right: 8px;
                                       font-size: 1.1em;}*/
-    
-
+#secondary .widget ul li.cat-item {   background-size:10%;
+                                      background-position: 4px 8px;}    
     
 .quiero { width: 60%; }  
     
