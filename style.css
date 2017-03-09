@@ -433,6 +433,78 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
     color: white !important;
     
 }
+
+/*formulario de compra venta*/
+#ayuda form h3 { text-align: center;
+                 margin: 0px 0px 30px 0px;
+                 padding: 20px 0px 20px 0px;
+                 color:black;
+                 font-size: 1.4em;
+                 display: block;
+                 width: 100%;    
+     }
+
+#ayuda {
+ width: 100%;
+ min-height: 400px;
+ padding: 20px 5px;
+ margin: 0 auto;
+ 
+ /*background-image: url(descarga.jpg);
+ background-size: 200% 100%;*/
+ 
+}
+
+#ayuda form { width: 98%;
+                 padding: 10px 20px;
+                 margin: auto;
+                 background-color: transparent;
+                 /*background-color: rgba(0,0,0,.4);*/
+                 box-sizing: border-box;
+                 border-top: 1px solid rgba(0, 0, 0, 0.4);
+                 border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                 background-image:url(img/orent.png);
+                 background-repeat: no-repeat;
+                 background-position: 200px -130px;
+                 background-size: 80%;
+                 
+                 /*border-radius: 10px;*/
+       }
+#ayuda input, #ayuda textarea { width: 100%;
+                                margin-bottom: 20px;
+                                padding: 10px;
+                                box-sizing: border-box;
+                                font-size: 17px;
+                                border-bottom-right-radius: 10px;
+                                border: 1px solid rgba(0, 0, 0, 0.4);                 
+                  }
+
+#ayuda select { background: transparent;
+                   border: 1px solid rgba(0, 0, 0, 0.4);
+                   font-size: 14px;
+                   height: 40px;
+                   padding: 5px;
+                   width: 100%;
+                   margin-bottom: 20px;
+}
+
+#ayuda select:focus{ outline: none;}
+
+
+
+
+
+#ayuda textarea { min-height: 150px;
+           max-height: 220px;
+           max-width: 100%;}
+
+#boton { background-color: #B7669E !important;
+         color: whitesmoke;
+         padding: 10px;
+        font-size: 1.5em;
+        cursor: pointer;}
+
+
 /*MEDIA QUERIES*/
 
 /*480 breakpoint*/
@@ -445,7 +517,14 @@ ul.product-categories li.cat-item {   background-size: 6%;
     
     
     
-.quiero { width: 60%; }    
+.quiero { width: 60%; }
+    
+    
+#ayuda{
+            width: 400px;
+            margin: auto;}
+    
+    #ayuda form { width: 80%;}
     
 }
 
