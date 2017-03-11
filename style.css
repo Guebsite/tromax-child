@@ -36,6 +36,8 @@ Author URI: http://www.guebsite.com
 .searchandfilter { background-color: #B7669E;
                    min-height: 1px;
                    margin-bottom: 15px;
+                   border-bottom: solid 4px rgba(41, 45, 56, 0.6) !important;
+                   border-top: solid 4px rgba(41, 45, 56, 0.6) !important;
                    padding: 10px;}
 
 .searchandfilter ul { width: 100%;
@@ -132,11 +134,24 @@ a {
     
 }
 
+/*contactar al anunciante*/
+
+div.woocommerce-tabs.wc-tabs-wrapper > ul > li.common_tab_tab { background-color: #B7669E !important;}
+
+div.woocommerce-tabs.wc-tabs-wrapper > ul > li.common_tab_tab a { color:white !important;}
+
+div.woocommerce-tabs.wc-tabs-wrapper > ul > li.common_tab_tab:hover { background-color: rgba(183, 174, 174, 0.4) !important;
+}
+
+
+div.woocommerce-tabs.wc-tabs-wrapper > ul > li.common_tab_tab a:hover { color: #B7669E !important;}
+
 /*Eliminar valoraciones Woocommerce*/
 
 ul.tabs li.reviews_tab {
     display: none !important;
 }
+
 
 
 #masthead #text-title-desc {
@@ -416,9 +431,20 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
 
 /*Propiedades del Footer*/
 
+#footer-sidebar .footer-column .widget_tag_cloud .tagcloud a {
+    background: #B7669E !important;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #f4f4f4;
+    padding: 7px 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
 #footer-sidebar {
-    background: #5d5b5d !important;
-    border-top: solid 3px #B7669E !important;
+    background: #343a4a !important;
+    border-top: solid 4px #292d38 !important;
 }
 
 #colophon { background-color: #B7669E !important;}
@@ -476,8 +502,7 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
                                 box-sizing: border-box;
                                 font-size: 17px;
                                 border-bottom-right-radius: 10px;
-                                border: 1px solid rgba(0, 0, 0, 0.4);                 
-                  }
+                                border: 1px solid rgba(0, 0, 0, 0.4);                                   }
 
 #ayuda select { background: transparent;
                    border: 1px solid rgba(0, 0, 0, 0.4);
@@ -491,9 +516,6 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
 #ayuda select:focus{ outline: none;}
 
 
-
-
-
 #ayuda textarea { min-height: 150px;
            max-height: 220px;
            max-width: 100%;}
@@ -503,6 +525,58 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
          padding: 10px;
         font-size: 1.5em;
         cursor: pointer;}
+
+
+
+/*menu social*/
+
+#menu-social {
+padding: 20px 0;
+background-color: #343a4a;
+}
+#menu-social ul {
+list-style: none;
+text-align: center;
+margin: 0;
+padding: 10px 0;
+}
+#menu-social ul li {
+display: inline-block;
+position: relative;
+}
+#menu-social li a {
+color: #F7C00A;
+margin: 0 10px;
+}
+#menu-social li a:hover {
+color: #c68e02;
+}
+#menu-social li a::before {
+	content: "\f135";
+	display: inline-block;
+	padding: 0 5px;
+	font-family: FontAwesome;
+	font-size: 26px;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#menu-social li a[href*="facebook.com"]::before {
+	content: "\f09a";
+}
+#menu-social li a[href*="twitter.com"]::before {
+	content: "\f099";
+}
+#menu-social li a[href*="plus.google.com"]::before {
+	content: "\f0d5";
+}
+#menu-social a {
+-webkit-transition: .15s all linear;
+-moz-transition: .15s all linear;
+-o-transition: .15s all linear;
+transition: .15s all linear;
+}
 
 
 /*MEDIA QUERIES*/
@@ -538,16 +612,14 @@ ul.product-categories li.cat-item {   background-size: 6%;
 #secondary .widget ul li { width: 50%;
                            box-sizing: border-box;
                             float: left;
-                           height: 45px; 
-                           
+                           height: 45px;                           
                           }
     
 #secondary .widget ul li:nth-child(2)  { border-top: solid 1px #f2f2f2 !important;  }
     
     
 #secondary .widget ul li a {float: left;
-                            padding-left: 40px !important;
-                           
+                            padding-left: 40px !important;                     
                           }    
 
 /*#secondary .widget ul li:first-child {

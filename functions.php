@@ -104,3 +104,14 @@ function custom_taxonomy() {
 add_action( 'init', 'custom_taxonomy', 0 );
 
 }
+
+function woo_reorder_tabs( $tabs ) {
+ 
+	$tabs['reviews']['priority'] = 5;			// Reviews primero
+	$tabs['description']['priority'] = 10;			// Description segundo
+	$tabs['additional_information']['priority'] = 15;	// Información adicional tercero
+    $tabs['common_tab']['priority'] = 20;	// Información adicional tercero
+    
+ 
+	return $tabs;
+}
