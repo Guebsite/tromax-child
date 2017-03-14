@@ -26,5 +26,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+<?php get_sidebar('sgle'); ?>
 <?php get_footer(); ?>
