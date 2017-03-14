@@ -9,9 +9,6 @@ Author URI: http://www.guebsite.com
 
 @import url(../tromax/style.css);
 
-
-
-
   .center { text-align:center;}
   img.center, img [align="center"] { display:block; margin-left:auto; margin-right:auto;}
   .alignleft {float:left;}
