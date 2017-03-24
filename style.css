@@ -542,56 +542,9 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
         cursor: pointer;}
 
 
-
 /*menu social*/
 
-#menu-social {
-padding: 20px 0;
-background-color: #343a4a;
-}
-#menu-social ul {
-list-style: none;
-text-align: center;
-margin: 0;
-padding: 10px 0;
-}
-#menu-social ul li {
-display: inline-block;
-position: relative;
-}
-#menu-social li a {
-color: #F7C00A;
-margin: 0 10px;
-}
-#menu-social li a:hover {
-color: #c68e02;
-}
-#menu-social li a::before {
-	content: "\f135";
-	display: inline-block;
-	padding: 0 5px;
-	font-family: FontAwesome;
-	font-size: 26px;
-	vertical-align: middle;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
 
-#menu-social li a[href*="facebook.com"]::before {
-	content: "\f09a";
-}
-#menu-social li a[href*="twitter.com"]::before {
-	content: "\f099";
-}
-#menu-social li a[href*="plus.google.com"]::before {
-	content: "\f0d5";
-}
-#menu-social a {
--webkit-transition: .15s all linear;
--moz-transition: .15s all linear;
--o-transition: .15s all linear;
-transition: .15s all linear;
-}
 
 
 /*MEDIA QUERIES*/
@@ -614,6 +567,8 @@ ul.product-categories li.cat-item {   background-size: 6%;
             margin: auto;}
     
     #ayuda form { width: 80%;}
+    
+
     
 }
 
