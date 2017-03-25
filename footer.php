@@ -16,9 +16,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<?php printf( __( 'Powered by %1$s.', 'tromax' ), '<a href="'.esc_url("https://rohitink.com/2016/11/16/tromax-responsive-wordpress-theme/").'" rel="designer">Tromax Theme</a>' ); ?>
+			<?php printf( __( 'Powered by %1$s.', 'Guebsite' ), '<a href="'.esc_url("#").'" rel="designer">Guebsite</a>' ); ?>
 			<span class="sep"></span>
-			<?php echo ( get_theme_mod('tromax_footer_text') == '' ) ? ('&copy; '.date('Y').' '.get_bloginfo('name').__('. All Rights Reserved. ','tromax')) : esc_html( get_theme_mod('tromax_footer_text') ); ?>
+			<?php echo ( get_theme_mod('tromax_footer_text') == '' ) ? ('&copy; '.date('Y').' '.get_bloginfo('name').__('. All Rights Reserved. ','Rentobregon')) : esc_html( get_theme_mod('tromax_footer_text') ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	
