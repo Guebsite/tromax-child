@@ -1,6 +1,6 @@
 <div id="secondary" class="widget-area <?php apply_filters('tromax_secondary-width','tromax_secondary_class') ?>" role="complementary">
 	
-<div id="ayuda">
+	<div id="ayuda">
     <form action="enviar.php" method="post">
     <h3 class="tcontact">¿Como te ayudamos?</h3>
     <input name="nombre" required="" type="text" placeholder="Nombre*" />
@@ -9,12 +9,9 @@
     
     <select name="quiero">
         <option value="" selected>-- Elija una opción -- </option>
-        <option value="Casa">Casa</option>
-        <option value="Oficina">Oficina</option>
-        <option value="Bodega">Bodega</option>
-        <option value="Departamento">Departamento</option>
-        <option value="Local Comercial">Local Comercial</option>
-        <option value="Terreno">Terreno</option>
+        <option value="Casa">Quiero Vender</option>
+        <option value="Oficina">Quiero Comprar</option>
+        <option value="Bodega">Quiero Rentar</option>
         <option value="Otro">Otro</option>
     </select>
     
@@ -24,7 +21,6 @@
     </form>
 
 </div>
-	
 	
 	
 	

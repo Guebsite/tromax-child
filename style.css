@@ -137,9 +137,7 @@ blockquote {
     padding: 40px 0px 40px 0px;
 }
 
-
-
-#site-logo img { width: 80%;}
+#site-logo img { width: 80% !important;}
 
 /*breadcums*/
 
@@ -704,7 +702,7 @@ ul.product-categories li.cat-item {   background-size: 6%;
     
     #ayuda form { width: 80%;}
     
-
+#site-logo img { width: 290px !important;}
     
 }
 
@@ -727,16 +725,6 @@ ul.product-categories li.cat-item {   background-size: 6%;
 #secondary .widget ul li a {float: left;
                             padding-left: 40px !important;                     
                           }    
-
-/*#secondary .widget ul li:first-child {
-    
-    border-top: solid 1px #f2f2f2;
-    
-}
-
-#secondary .widget ul li:last-child { border-bottom: solid 1px #f2f2f2 !important; }*/    
-    
-    
 
 #secondary h1.widget-title {
     padding-bottom: 5px;
@@ -785,8 +773,8 @@ ul.product-categories li.cat-item {   background-size: 6%;
 /*640 breakpoint*/
 @media only screen and (min-width: 640px) {
     
- /*ul.product-categories li { height: 210px !important;}    
-ul.product-categories li span.count { top: -190px;}*/
+ 
+    
 }
 
 

@@ -8,13 +8,14 @@
     <input name="Tel" pattern="[0-9]{10}" type="tel" placeholder="Teléfono (Opcional) 10 dígitos" />
     
     <select name="quiero">
-        <option selected="selected">Rentar mi Casa</option>
-        <option>Busco casa en renta</option>
-        <option>Vender mi Casa</option>
-        <option>Comprar Casa</option>
-        <option>Vender Terreno</option>
-        <option>Comprar Terrenos</option>
-        <option>Otro</option>
+        <option value="" selected>-- Elija una opción -- </option>
+        <option value="Casa">Casa</option>
+        <option value="Oficina">Oficina</option>
+        <option value="Bodega">Bodega</option>
+        <option value="Departamento">Departamento</option>
+        <option value="Local Comercial">Local Comercial</option>
+        <option value="Terreno">Terreno</option>
+        <option value="Otro">Otro</option>
     </select>
     
     <textarea name="mensaje" required="" placeholder="Mensaje*"></textarea>
