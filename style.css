@@ -680,6 +680,13 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
    
 }
 
+/*columnas de productos*/
+
+
+.woocommerce ul.products li.product {
+    width: 98% !important;
+}
+
 
 /*MEDIA QUERIES*/
 
@@ -703,6 +710,10 @@ ul.product-categories li.cat-item {   background-size: 6%;
     #ayuda form { width: 80%;}
     
 #site-logo img { width: 290px !important;}
+    
+.woocommerce ul.products li.product {
+    width: 48% !important;
+}
     
 }
 
@@ -767,6 +778,10 @@ ul.product-categories li.cat-item {   background-size: 6%;
     
 }
     
+.woocommerce ul.products li.product {
+    width: 48% !important;
+}
+    
     
 }
 
@@ -803,7 +818,11 @@ ul.product-categories li span.count { top: -160px;}*/
     
     
     
-
+ .woocommerce ul.products li.product {
+    width: 30.75% !important;
+}
+    
+  
     
 }
 
