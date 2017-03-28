@@ -9,15 +9,17 @@ Author URI: http://www.guebsite.com
 
 @import url(../tromax/style.css);
 
-  .center { text-align:center;}
+ .center { text-align:center !important; }
   img.center, img [align="center"] { display:block; margin-left:auto; margin-right:auto;}
-  .alignleft {float:left;}
+  .alignleft {float:left !important;}
   img.alignleft, img [align="left"] { float:left; margin:2px 10px 5px 0px;}
   .alignright { float:right;}
   img.alignright, img [align="right"] { float:right; margin:2px 0px 5px 10px;}
-  .clear { clear:both;}
+  .clear { clear:both !important;}
   hr.clear { clear:both; visibility:hidden; margin:0px; padding:0px; height:0px;}
-article.content p { margin-bottom:12px; }
+  article.content p { margin-bottom:12px !important; }
+
+
 
 /*TIPOGRAFIAS*/
 
