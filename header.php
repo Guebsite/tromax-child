@@ -110,4 +110,8 @@
 		
 	
 		<div id="content" class="site-content container">
+<<<<<<< Updated upstream
 <?php echo do_shortcode( '[searchandfilter fields="search,product_cat,taxonomyone,taxonomytwo" empty_search_url="http://localhost/ProyectosGuebsite/rentobr/inmuebles/" search_placeholder="Buscar propiedades en Cd.Obregón" submit_label="Buscar"]' ); ?>
+=======
+<?php echo do_shortcode( '[searchandfilter fields="search,product_cat,taxonomyone,taxonomytwo" empty_search_url="http://www.rentobregon.com.mx/inmuebles/" search_placeholder="Buscar propiedades en Cd.Obregón" submit_label="Buscar"]' ); ?>
+>>>>>>> Stashed changes
