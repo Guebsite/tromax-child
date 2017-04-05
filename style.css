@@ -689,6 +689,8 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
     width: 98% !important;
 }
 
+#secondary li { list-style-type: none !important;}
+
 
 /*MEDIA QUERIES*/
 
