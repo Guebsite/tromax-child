@@ -138,3 +138,5 @@ if ( function_exists('register_sidebar') ) {
  'after_title' => '</h2>',
  ));
 }
+
+add_theme_support( 'wc-product-gallery-lightbox' );
