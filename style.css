@@ -10,17 +10,7 @@ Author URI: http://www.guebsite.com
 @import url(../tromax/style.css);
 
 
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-.woocommerce ul.products li.product h2 {
+f.woocommerce ul.products li.product h2 {
  padding: 10px;
  margin: 0;
  font-size: 16px;
@@ -47,8 +37,6 @@ Author URI: http://www.guebsite.com
   hr.clear { clear:both; visibility:hidden; margin:0px; padding:0px; height:0px;}
   article.content p { margin-bottom:12px !important; }
 
-
-
 /*TIPOGRAFIAS*/
 
 @font-face {
@@ -69,6 +57,19 @@ Author URI: http://www.guebsite.com
     font-style: normal;
 
 }
+
+/*Product H5 Woocommerce*/
+
+.entry-content h2 { font-family: 'istok_webregular';
+                      font-size: 1.9rem;
+                      padding-top: 10px;
+                      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+                      text-transform: uppercase;
+                      color: #B7669E;}
+
+
+#secondary { list-style-type: none; }
+
 
 /*Search & filter */
 
@@ -185,6 +186,8 @@ a {
     font-weight: bold;
   
 }
+
+.woocommerce-Price-amount { color: #B7669E !important; }
 
 #site-navigation ul li a {
     color: white !important;
@@ -343,6 +346,15 @@ ul.product-categories li span.count { color: #B7669E;
 .widget {
     margin: 0 0 0.2em !important;
 }
+
+
+.AdWidget_ImageWidget { border-top: 3px solid #B7669E;
+                        border-bottom: 3px solid #B7669E;
+                        margin-bottom: 12px !important;
+                        box-shadow: 0px 0px 1px black;}
+
+
+
 /*YITH busqueda Rápida*/
 
 div.yith-ajaxsearchform-container { text-align: center;
