@@ -58,6 +58,153 @@ f.woocommerce ul.products li.product h2 {
 
 }
 
+.social .line {
+	position: absolute;
+	top: 0; left: 0px;
+	width: 100%; height: 5px;
+	background: #fced00;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	z-index: 0;
+}
+.social ul {
+	position: absolute;
+	right: 25%; margin-left: -216px;
+	list-style: none;
+	color: #000;
+    z-index: 5;
+}
+.social ul li {
+	float: left;
+}
+.social ul li a {
+	position: relative;
+	float: left;
+	background: #fff000;
+	width: 48px; height: 68px;
+	text-align: center;
+	color: #000;
+	padding: 0 0 30px 0;
+}
+.social ul li a:hover {
+	color: #fff;
+}
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin {
+	padding: 10px 0 0 0;
+}
+
+/* Pseudo Elements */
+.social ul li a:after {
+	content: "";
+	position: absolute;
+	bottom: 0px; left: 0;
+	width: 1px; height: 1px;
+	border: 24px solid transparent;
+	border-bottom: 24px solid #dddfde;
+	z-index: 0;
+}
+
+/* Hover */
+.social ul li.facebook a:hover {
+	background: #3b5998;
+}
+.social ul li.twitter a:hover {
+	background: #44ccf6;
+}
+.social ul li.codepen a:hover {
+	background: #cccccc;
+}
+.social ul li.youtube a:hover { 
+	background: #da2d2e; 
+}
+.social ul li.instagram a:hover { 
+	background: #66269e; 
+}
+.social ul li.pinterest a:hover {
+	background: #c3042b;
+}
+.social ul li.github a:hover {
+	background: #000000;
+}
+.social ul li.flickr a:hover {
+	background: #72858c;
+}
+.social ul li.linkedin a:hover {
+	background: #1c66c2; 
+}
+.social .line {
+	position: absolute;
+	top: 0; left: 0px;
+	width: 100%; height: 5px;
+	background: #292d38;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	z-index: 0;
+}
+.social ul {
+	position: absolute;
+	left: 70%; margin-left: -10px;
+	list-style: none;
+    width: 200px;
+	color: #000;
+}
+.social ul li {
+	float: left;
+}
+.social ul li a {
+	position: relative;
+	float: left;
+	background: #292d38;
+	width: 48px; height: 68px;
+	text-align: center;
+	color: #000;
+	padding: 0 0 30px 0;
+}
+.social ul li a:hover {
+	color: #fff;
+}
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin {
+	padding: 10px 0 0 0;
+}
+
+/* Pseudo Elements */
+.social ul li a:after {
+	content: "";
+	position: absolute;
+	bottom: 0px; left: 0;
+	width: 1px; height: 1px;
+	border: 24px solid transparent;
+	border-bottom: 24px solid #ffffff;
+	z-index: 0;
+}
+
+/* Hover */
+.social ul li.facebook a:hover {
+	background: #3b5998;
+}
+.social ul li.twitter a:hover {
+	background: #44ccf6;
+}
+.social ul li.codepen a:hover {
+	background: #cccccc;
+}
+.social ul li.youtube a:hover { 
+	background: #da2d2e; 
+}
+.social ul li.instagram a:hover { 
+	background: #66269e; 
+}
+.social ul li.pinterest a:hover {
+	background: #c3042b;
+}
+.social ul li.github a:hover {
+	background: #000000;
+}
+.social ul li.flickr a:hover {
+	background: #72858c;
+}
+.social ul li.linkedin a:hover {
+	background: #1c66c2; 
+}
+
 /*Product H5 Woocommerce*/
 
 .entry-content h2 { font-family: 'istok_webregular';
@@ -69,6 +216,47 @@ f.woocommerce ul.products li.product h2 {
 
 
 #secondary { list-style-type: none !important; }
+/*Solicitar informacion boton*/
+
+.actionnow {
+	background-color:#ad398a;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:2px solid #292d38;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family:Arial;
+	font-size:20px;
+	padding:12px 49px;
+    float: right;
+    position:relative;
+    top:-60px;
+    right: 50px;
+	text-decoration:none !important;
+	
+}
+.actionnow:hover {
+	background-color:#b7669d;
+}
+
+.wpcf7-submit { background-color:#ad398a !important;
+	-moz-border-radius:28px !important;
+	-webkit-border-radius:28px !important;
+	border-radius:28px !important;
+	border:2px solid #292d38 !important;
+	display:inline-block !important;
+	cursor:pointer !important;
+	color:#000000 !important;
+	font-family:Arial !important;
+	font-size:20px !important;
+	padding:12px 49px !important;
+    text-decoration:none !important;
+    float: right !important;}
+
+.wpcf7-submit:hover {background-color:#b7669d !important;
+                     color:#ffffff !important;}
 
 
 /*Search & filter */
@@ -897,6 +1085,7 @@ ul.product-categories li span.count { top: -160px;}*/
     
 #masthead div.site-branding {
     padding: 40px 0px 40px 30px !important;
+    z-index: 0;
 }
     
 /*ul.product-categories li { width: 48%;

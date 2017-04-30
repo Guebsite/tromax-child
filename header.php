@@ -28,6 +28,7 @@
 	</div>	
 	
 	<div id="top-bar">
+	   
 		<div class="container">
 			
 			<div id="util-links">
@@ -70,7 +71,34 @@
 	</div>
 	
 	<header id="masthead" class="site-header" role="banner">
+	    
 		<div class="container masthead-container">
+		<div class="social">
+	<span class="line"></span>
+	<ul>
+		<li class="facebook">
+			<a href="https://facebook.com/lucas.russo.923" target="_blank">
+				<i class="fa fa-facebook fa-2x"></i>
+			</a>
+		</li>
+		<li class="twitter">
+			<a href="https://twitter.com/lucasrdvp" target="_blank">
+				<i class="fa fa-twitter fa-2x"></i>
+			</a>
+		</li>
+		
+		<li class="youtube">
+			<a href="#" target="_blank">
+				<i class="fa fa-youtube fa-2x"></i>
+			</a>
+		</li>
+		
+		
+		
+		
+		
+	</ul>
+</div>
 			<div class="site-branding">
 			    			
 				<?php if ( tromax_has_logo()) : ?>

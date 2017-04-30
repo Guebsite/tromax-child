@@ -1,5 +1,5 @@
     <section id="opciones">
-       <h5>¿Que deseas hacer?</h5>
+       <h5>¿Qué deseas hacer?</h5>
         <div class="ajuste">
             <div class="quiero rentar">
                 <a href="http://www.rentobregon.com.mx/quiero-rentar/">
