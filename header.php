@@ -77,18 +77,18 @@
 	<span class="line"></span>
 	<ul>
 		<li class="facebook">
-			<a href="https://facebook.com/lucas.russo.923" target="_blank">
+			<a href="https://facebook.com/rentobregon" target="_blank">
 				<i class="fa fa-facebook fa-2x"></i>
 			</a>
 		</li>
 		<li class="twitter">
-			<a href="https://twitter.com/lucasrdvp" target="_blank">
+			<a href="https://twitter.com/rentobregon" target="_blank">
 				<i class="fa fa-twitter fa-2x"></i>
 			</a>
 		</li>
 		
 		<li class="youtube">
-			<a href="#" target="_blank">
+			<a href="https://www.youtube.com/channel/UCpZUTecBeEUqdL-JzbM0i0A" target="_blank">
 				<i class="fa fa-youtube fa-2x"></i>
 			</a>
 		</li>

@@ -57,153 +57,9 @@ f.woocommerce ul.products li.product h2 {
     font-style: normal;
 
 }
+/*redes sociales top*/
+.social ul {display: none;}
 
-.social .line {
-	position: absolute;
-	top: 0; left: 0px;
-	width: 100%; height: 5px;
-	background: #fced00;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	z-index: 0;
-}
-.social ul {
-	position: absolute;
-	right: 25%; margin-left: -216px;
-	list-style: none;
-	color: #000;
-    z-index: 5;
-}
-.social ul li {
-	float: left;
-}
-.social ul li a {
-	position: relative;
-	float: left;
-	background: #fff000;
-	width: 48px; height: 68px;
-	text-align: center;
-	color: #000;
-	padding: 0 0 30px 0;
-}
-.social ul li a:hover {
-	color: #fff;
-}
-.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin {
-	padding: 10px 0 0 0;
-}
-
-/* Pseudo Elements */
-.social ul li a:after {
-	content: "";
-	position: absolute;
-	bottom: 0px; left: 0;
-	width: 1px; height: 1px;
-	border: 24px solid transparent;
-	border-bottom: 24px solid #dddfde;
-	z-index: 0;
-}
-
-/* Hover */
-.social ul li.facebook a:hover {
-	background: #3b5998;
-}
-.social ul li.twitter a:hover {
-	background: #44ccf6;
-}
-.social ul li.codepen a:hover {
-	background: #cccccc;
-}
-.social ul li.youtube a:hover { 
-	background: #da2d2e; 
-}
-.social ul li.instagram a:hover { 
-	background: #66269e; 
-}
-.social ul li.pinterest a:hover {
-	background: #c3042b;
-}
-.social ul li.github a:hover {
-	background: #000000;
-}
-.social ul li.flickr a:hover {
-	background: #72858c;
-}
-.social ul li.linkedin a:hover {
-	background: #1c66c2; 
-}
-.social .line {
-	position: absolute;
-	top: 0; left: 0px;
-	width: 100%; height: 5px;
-	background: #292d38;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	z-index: 0;
-}
-.social ul {
-	position: absolute;
-	left: 70%; margin-left: -10px;
-	list-style: none;
-    width: 200px;
-	color: #000;
-}
-.social ul li {
-	float: left;
-}
-.social ul li a {
-	position: relative;
-	float: left;
-	background: #292d38;
-	width: 48px; height: 68px;
-	text-align: center;
-	color: #000;
-	padding: 0 0 30px 0;
-}
-.social ul li a:hover {
-	color: #fff;
-}
-.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin {
-	padding: 10px 0 0 0;
-}
-
-/* Pseudo Elements */
-.social ul li a:after {
-	content: "";
-	position: absolute;
-	bottom: 0px; left: 0;
-	width: 1px; height: 1px;
-	border: 24px solid transparent;
-	border-bottom: 24px solid #ffffff;
-	z-index: 0;
-}
-
-/* Hover */
-.social ul li.facebook a:hover {
-	background: #3b5998;
-}
-.social ul li.twitter a:hover {
-	background: #44ccf6;
-}
-.social ul li.codepen a:hover {
-	background: #cccccc;
-}
-.social ul li.youtube a:hover { 
-	background: #da2d2e; 
-}
-.social ul li.instagram a:hover { 
-	background: #66269e; 
-}
-.social ul li.pinterest a:hover {
-	background: #c3042b;
-}
-.social ul li.github a:hover {
-	background: #000000;
-}
-.social ul li.flickr a:hover {
-	background: #72858c;
-}
-.social ul li.linkedin a:hover {
-	background: #1c66c2; 
-}
 
 /*Product H5 Woocommerce*/
 
@@ -229,17 +85,20 @@ f.woocommerce ul.products li.product h2 {
 	color:#ffffff !important;
 	font-family:Arial;
 	font-size:20px;
-	padding:12px 49px;
-    float: right;
-    position:relative;
-    top:-60px;
-    right: 50px;
-	text-decoration:none !important;
+	padding:12px 35px;
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration:none !important;
 	
 }
 .actionnow:hover {
 	background-color:#b7669d;
 }
+/*botones form7*/
+
+
 
 .wpcf7-submit { background-color:#ad398a !important;
 	-moz-border-radius:28px !important;
@@ -309,11 +168,18 @@ f.woocommerce ul.products li.product h2 {
 
 .searchandfilter li input[type="submit"] { width: 100%;
                                            height: 40px;
-                                           padding: 5px;
-                                           font-size: 1em;
+                                           padding: 4px 5px 5px 5px;
+                                           font-size: 1.2em;
+                                           border:1px solid #292d38;
+                                           box-sizing: border-box;
                                            background-color: white !important;
                                            color: black;
                                            border-radius: 15px;}
+
+.searchandfilter li input[type="submit"]:hover { background-color: #b7669e !important;
+                                                 color:white !important;
+                                                 border:1px solid white !important;
+                                                 }
 
 
 .page-description ul { min-height: 1px !important;}
@@ -533,6 +399,7 @@ ul.product-categories li span.count { color: #B7669E;
 
 .widget {
     margin: 0 0 0.2em !important;
+    overflow: hidden;
 }
 
 
@@ -584,6 +451,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 .tromax .out-thumb .readmore a {
     background: #B7669E !important;
     color:white !important;
+    padding: 8px 20px !important;
     
 }
 
@@ -834,7 +702,7 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
     
 }
 
-/*menu social*/
+/*menu social footer*/
 
 .icons {
     
@@ -859,6 +727,7 @@ ul.product-categories li.cat-item-28 { background-image: url(imgcat/terrenos.png
     -o-transition: all 0.2s ease-out;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    padding-top: 0px;
 }
 .icons i:hover, .icons i:focus {    
   color: #fff;
@@ -966,7 +835,9 @@ ul.product-categories li.cat-item {   background-size: 6%;
     
 #secondary .widget ul li a {float: left;
                             padding-left: 40px !important;                     
-                          }    
+                          } 
+    
+ 
 
 #secondary h1.widget-title {
     padding-bottom: 5px;
@@ -1013,7 +884,17 @@ ul.product-categories li.cat-item {   background-size: 6%;
     width: 48% !important;
 }
     
+    .actionnow { float: right;
+                 width: 55vw;
+                 position:relative;
+                 top:-80px;}
+    #secondary aside.AdWidget_ImageWidget { width: 48%;
+                                            float: left;
+                                            margin-right:8px;}
     
+    
+#tab-common_tab input.wpcf7-submit { width: 400px;
+                                     margin-right: 45%;}
 }
 
 /*640 breakpoint*/
@@ -1072,9 +953,93 @@ ul.product-categories li span.count { top: -160px;}*/
     
     #secondary .widget ul li a { padding: 0px 0px 0px 90px; }
     
-#secondary .widget ul li:nth-child(2) { border-top: 0px !important;}    
+#secondary .widget ul li:nth-child(2) { border-top: 0px !important;}  
     
+#secondary aside.AdWidget_ImageWidget { width: 100%;
+                                        float: none;
+                                        margin-right:0px;}
+#site-logo { margin-left: 40px;}
     
+.actionnow { width: 300px;
+            margin-right: 75px;}
+
+    
+/*Redes sociales superior*/
+.social .line {
+	position: absolute;
+	top: 0; left: 0px;
+	width: 100%; height: 5px;
+	background: #343a4a;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	z-index: 0;
+}
+.social ul { display: block;
+	position: absolute;
+	right: 18%; margin-left: -216px;
+    list-style: none;
+	color: #000;
+    z-index: 5;
+}
+.social ul li {
+	float: left;
+}
+.social ul li a {
+	position: relative;
+	float: left;
+    color: #ffffff !important;
+	background: #343a4a;
+	width: 48px; height: 73px;
+	text-align: center;
+	color: #000;
+	padding: 0 0 30px 0;
+}
+.social ul li a:hover {
+	color: #fff;
+}
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin {
+	padding: 10px 0 0 0;
+}
+
+/* Pseudo Elements */
+.social ul li a:after {
+	content: "";
+	position: absolute;
+	bottom: 0px; left: 0;
+	width: 1px; height: 1px;
+	border: 24px solid transparent;
+	border-bottom: 24px solid #ffffff;
+	z-index: 0;
+}
+
+/* Hover */
+.social ul li.facebook a:hover {
+	background: #3b5998;
+}
+.social ul li.twitter a:hover {
+	background: #44ccf6;
+}
+.social ul li.codepen a:hover {
+	background: #cccccc;
+}
+.social ul li.youtube a:hover { 
+	background: #da2d2e; 
+}
+.social ul li.instagram a:hover { 
+	background: #66269e; 
+}
+.social ul li.pinterest a:hover {
+	background: #c3042b;
+}
+.social ul li.github a:hover {
+	background: #000000;
+}
+.social ul li.flickr a:hover {
+	background: #72858c;
+}
+.social ul li.linkedin a:hover {
+	background: #1c66c2; 
+}
+
     
 }
 
@@ -1087,6 +1052,7 @@ ul.product-categories li span.count { top: -160px;}*/
     padding: 40px 0px 40px 30px !important;
     z-index: 0;
 }
+    #site-logo { margin-left: 0px;}
     
 /*ul.product-categories li { width: 48%;
                             height: 120px !important;}
