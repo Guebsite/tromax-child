@@ -70,6 +70,8 @@ f.woocommerce ul.products li.product h2 {
                       text-transform: uppercase;
                       color: #B7669E;}
 
+.row h3 { color: black !important; }
+
 
 #secondary { list-style-type: none !important; }
 /*Solicitar informacion boton*/
