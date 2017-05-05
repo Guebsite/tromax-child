@@ -141,3 +141,51 @@ if ( function_exists('register_sidebar') ) {
 
 add_theme_support( 'wc-product-gallery-lightbox' );
 
+if ( ! function_exists( 'custom_real_estate' ) ) {
+
+// Register Custom Taxonomy
+function custom_real_estate() {
+
+	$labels = array(
+		'name'                       => _x( 'Inmobiliarias', 'Taxonomy General Name', 'inmobiliaria' ),
+		'singular_name'              => _x( 'Inmobiliaria', 'Taxonomy Singular Name', 'inmobiliaria' ),
+		'menu_name'                  => __( 'Inmobiliarias', 'inmobiliaria' ),
+		'all_items'                  => __( 'All Items', 'inmobiliaria' ),
+		'parent_item'                => __( 'Parent Item', 'inmobiliaria' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'inmobiliaria' ),
+		'new_item_name'              => __( 'New Item Name', 'inmobiliaria' ),
+		'add_new_item'               => __( 'Add New Item', 'inmobiliaria' ),
+		'edit_item'                  => __( 'Edit Item', 'inmobiliaria' ),
+		'update_item'                => __( 'Update Item', 'inmobiliaria' ),
+		'view_item'                  => __( 'View Item', 'inmobiliaria' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'inmobiliaria' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'inmobiliaria' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'inmobiliaria' ),
+		'popular_items'              => __( 'Popular Items', 'inmobiliaria' ),
+		'search_items'               => __( 'Search Items', 'inmobiliaria' ),
+		'not_found'                  => __( 'Not Found', 'inmobiliaria' ),
+		'no_terms'                   => __( 'No items', 'inmobiliaria' ),
+		'items_list'                 => __( 'Items list', 'inmobiliaria' ),
+		'items_list_navigation'      => __( 'Items list navigation', 'inmobiliaria' ),
+	);
+	$rewrite = array(
+		'slug'                       => 'inmobiliaria',
+		'with_front'                 => true,
+		'hierarchical'               => false,
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'rewrite'                    => $rewrite,
+	);
+	register_taxonomy( 'Inmobiliaria', array( 'product' ), $args );
+
+}
+add_action( 'init', 'custom_real_estate', 0 );
+
+}
