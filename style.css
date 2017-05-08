@@ -76,6 +76,15 @@ f.woocommerce ul.products li.product h2 {
 #secondary { list-style-type: none !important; }
 /*Solicitar informacion boton*/
 
+#secondary aside, #secondary li {
+    padding: 10px !important;
+}
+
+#secondary aside img, #secondary li img {
+    display: block;
+    width: 100%;
+}
+
 .actionnow {
 	background-color:#ad398a;
 	-moz-border-radius:28px;
@@ -393,11 +402,19 @@ ul.product-categories li span.count { color: #B7669E;
 
 
 /*Encabezados widget*/
-#secondary h1.widget-title {
+#secondary h1.widget-title, #secondary h2.widgettitle {
     text-align: center;
     font-size: 1.5em !important;
     margin-bottom: 12px !important;
 }
+
+#secondary h2.widgettitle{ 
+
+font-weight: bold !important;
+color: #222222 !important;
+}
+
+
 
 .widget {
     margin: 0 0 0.2em !important;
@@ -407,8 +424,9 @@ ul.product-categories li span.count { color: #B7669E;
 
 .AdWidget_ImageWidget { border-top: 3px solid rgba(41, 45, 56, 0.78);
                         border-bottom: 3px solid rgba(41, 45, 56, 0.78);
-                        background-color: rgba(183, 102, 158, 0.24);
+                        /*background-color: rgba(183, 102, 158, 0.24);*/
                         margin-bottom: 12px !important;
+                        margin-top: 12px !important;
                         box-shadow: 0px 0px 1px black;}
 
 
