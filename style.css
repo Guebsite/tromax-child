@@ -230,10 +230,10 @@ blockquote {
 /*logo*/
 
 #masthead div.site-branding {
-    padding: 40px 0px 40px 0px;
+    padding: 5px 0px 15px 0px;
 }
 
-#site-logo img { width: 80% !important;}
+#site-logo img { width: 50% !important;}
 
 /*breadcums*/
 
@@ -829,7 +829,7 @@ ul.product-categories li.cat-item {   background-size: 6%;
     
     #ayuda form { width: 80%;}
     
-#site-logo img { width: 290px !important;}
+
     
 .woocommerce ul.products li.product {
     width: 48% !important;
@@ -840,7 +840,12 @@ ul.product-categories li.cat-item {   background-size: 6%;
 /*600 breakpoint*/
 @media only screen and (min-width: 600px) {
     
- 
+ #masthead div.site-branding {
+    padding: 20px 0px 25px 0px;
+}
+    
+#site-logo img { width: 290px !important;}
+    
 #secondary .widget ul li.cat-item {   background-size:10%;
                                       background-position: 5px 10px;}  
     
@@ -915,6 +920,7 @@ ul.product-categories li.cat-item {   background-size: 6%;
     
 #tab-common_tab input.wpcf7-submit { width: 400px;
                                      margin-right: 45%;}
+
 }
 
 /*640 breakpoint*/
@@ -933,7 +939,16 @@ ul.product-categories li.cat-item {   background-size: 6%;
                              height: 180px !important;}    
 ul.product-categories li span.count { top: -160px;}*/
     
-
+#masthead div.site-branding {
+    padding: 20px 0px 25px 0px;
+}
+    
+#site-logo img { width: 290px !important;
+                 height: 70px !important;}
+    
+#site-logo { height: 70px !important;
+             width: 290px !important;}
+    
 #secondary .widget ul li.cat-item {   background-size:11%;
                                       background-position: 5px 10px;}  
     
