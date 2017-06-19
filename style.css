@@ -129,6 +129,8 @@ f.woocommerce ul.products li.product h2 {
                      color:#ffffff !important;}
 
 
+
+
 /*Search & filter */
 
 .searchandfilter { background-color: #B7669E;
@@ -920,6 +922,18 @@ ul.product-categories li.cat-item {   background-size: 6%;
     
 #tab-common_tab input.wpcf7-submit { width: 400px;
                                      margin-right: 45%;}
+/*Publicacion Gratuita Form*/
+
+#cfc input.formnumber { width: 49% !important;
+                        float: left;
+                        margin-bottom: 8px;
+                        margin-right: 1%;
+                        box-sizing: border-box;}
+    
+#cfc form .wpcf7-submit { width: 50% !important;
+                         margin-right: 50% !important;}
+    
+
 
 }
 
@@ -966,8 +980,9 @@ ul.product-categories li span.count { top: -160px;}*/
     
     
  .woocommerce ul.products li.product {
-    width: 30.75% !important;
-}
+    width: 30.75% !important;}
+    
+
     
   
     
