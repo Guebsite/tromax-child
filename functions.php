@@ -189,3 +189,77 @@ function custom_real_estate() {
 add_action( 'init', 'custom_real_estate', 0 );
 
 }
+
+/* SITEMAP  */
+// header('Content-Disposition: attachment; filename="sitemap.xml"'); // SI SE HABILITA, NOS DEVUELVE UN FICHERO SITEMAP.XML
+function poetxmlsitemapgenerator_init(){
+// OBTENER LISTA DE LOS POST
+  $posts = get_posts(array(
+   'numberposts' => -1,
+   'orderby'     => 'modified',
+   'post_type'   => array ( 'product','page','post'),  // URL QUE SE MOSTRARÁN EN EL SITEMAP.
+    'order'       => 'DESC' // ORDEN: EL MÁS RECIENTE CREADO O ACTUALIZADO SE SITUARÁ EN PRIMER LUGAR.
+  ));
+  
+// GENERAR CADENAS XML SITEMAP 
+$xmlsitemap = '<?xml version="1.0" encoding="UTF-8"?>';
+$xmlsitemap .= '<?xml-stylesheet type="text/xsl" href="sitemap-style.xsl"?>';  // HOJA DE ESTILO PARA LA PRESENTACIÓN EN HTML
+$xmlsitemap .='<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+
+// URL´S DE LOS POSTS, PÁGINAS Y PRODUCTOS Y CATEGORÍAS DE PRODUCTO.
+  foreach($posts as $post) {
+    setup_postdata($post);
+    $postdate = explode(" ", $post->post_modified);
+    $xmlsitemap .= '<url>'.
+      '<loc>'. get_permalink($post->ID) .'</loc>'. // URL DE LAS PÁGINAS, POST, CATEGORIAS, PRODUCTOS
+      '<lastmod>' . $postdate[0] . 'T' . $postdate[1] . $tempo .  '</lastmod>'.   // DEJA CONSTANCIA EN EL SITEMAP DE LA ÚLTIMA ACTUALIZACIÓN.
+      '<changefreq>weekly</changefreq>'. // FRECUENCIA CON LA QUE PUEDE CAMBIAR ESTA PÁGINA: ALWAYS, HOURLY, DAILY, WEEKLY, MONTHLY, YEARLY, NEVER
+	   '<priority>0.9</priority>'. //  FIJA LA RELEVANCIA/IMPORTANCIA  DE LAS PÁGINAS/PRODUCTOS ETC, AHORA ESTÁ AL 90%
+    '</url>';
+    }
+
+// PÁGINA PRINCIPAL
+  $xmlsitemap .= '<url>'.
+      '<loc>'. get_site_url() .'</loc>'.
+      '<lastmod>' . $postdate[0] . 'T' . $postdate[1] . $tempo .  '</lastmod>'. 
+      '<changefreq>monthly</changefreq>'.
+	  '<priority>1</priority>'. 
+  '</url>';
+ 
+// TODAS LAS CATEGORIAS DEL BLOG 
+  $categories=  get_categories();
+  foreach ($categories as $category) {
+    $xmlsitemap .= '<url>'.
+      '<loc>'. get_category_link($category->term_id) .'</loc>'.
+      '<lastmod>' . $postdate[0] . 'T' . $postdate[1] . $tempo .  '</lastmod>'. 
+      '<changefreq>weekly</changefreq>'.
+	  '<priority>0.5</priority>'. 
+    '</url>';
+  }  
+  
+// LISTAR TODAS LAS TAGS 
+  $tags = get_tags();
+  foreach ( $tags as $tag ) {
+    $xmlsitemap .= '<url>'.
+      '<loc>'. get_tag_link($tag->term_id) .'</loc>'.
+      '<lastmod>' . $postdate[0] . 'T' . $postdate[1] . $tempo .  '</lastmod>'. 
+      '<changefreq>weekly</changefreq>'.
+	   '<priority>0.7</priority>'.  
+    '</url>';
+  }
+  
+  $xmlsitemap .= '</urlset>';
+  $file = ABSPATH . "sitemap.xml";
+  
+// ESCRIBIR LA CADENA DE SITEMAP XML 
+  $fp = fopen(ABSPATH . "sitemap.xml", 'w');
+  fwrite($fp, $xmlsitemap);
+  fclose($fp);
+}
+
+// XML SITEMAP GENERADO 
+add_action('publish_page', 'poetxmlsitemapgenerator_init');
+add_action('publish_post', 'poetxmlsitemapgenerator_init');
+add_action('trashed_post', 'poetxmlsitemapgenerator_init');
+add_action('save_post',    'poetxmlsitemapgenerator_init');
+// add_action('before_delete_post','poetxmlsitemapgenerator_init');
