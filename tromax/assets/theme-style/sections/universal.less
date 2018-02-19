@@ -1,0 +1,48 @@
+.body-font {
+  font-family: "Open Sans", sans-serif;
+}
+.title-font {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  .body-font;
+  background: @background;
+  word-wrap: break-word;
+}
+.mega-container {
+  background: @background;
+  max-width: 1170px;
+  margin: auto;
+  margin-top: 20px;
+  overflow: visible;
+}
+a {
+  color: @accent;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: @accent;
+  }
+}
+.container {
+  margin: auto;
+}
+.panel {
+  background: none;
+}
+
+/* section titles */	
+.section-title {
+		color: @header-bg;
+        width:100%;
+		font-size: 20px;
+		margin-bottom: 20px;
+		padding: 0px 0px;
+		border-radius: 2px;
+		display: inline-block;
+		font-weight: 900;
+		@media screen and (max-width: 991px) {
+			margin-top: 20px;
+		}
+	}

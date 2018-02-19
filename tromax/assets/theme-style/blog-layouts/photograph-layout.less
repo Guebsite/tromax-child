@@ -1,0 +1,43 @@
+.photograph {
+  .featured-thumb {
+    border-top:none;
+    text-align:center;
+    img{
+      width:100%;
+    }
+    .transition(0.4 all ease);
+    &:hover {
+      img {
+        transform:scale(1.2);
+        filter:none;
+        opacity: 10;
+      }
+    }
+  }
+  .out-thumb {
+    padding:10px;
+    position: absolute;
+    bottom: 0;
+    z-index:1;
+    width: ~"calc(100% - 10px)";
+    background: fade(@header-bg,50%);
+    h1{
+      font-size:23px;
+      a {
+        color:@header-color;
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration:none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photograph .out-thumb {
+    margin-top:-5%;
+  }
+}

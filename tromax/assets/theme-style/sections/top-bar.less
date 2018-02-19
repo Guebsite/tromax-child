@@ -1,0 +1,229 @@
+#top-bar {
+  padding: 3px 0px;
+  background: lighten(@header-bg, 2%);
+  .container {
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+    padding: 0;
+  }
+
+  .social-icons {
+    float: right;
+    display: inline-block;
+    padding: 3px; 
+    @media screen and (max-width: 991px) {
+      float: none;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+  }
+  .social-icons .none {
+    padding: 2px;
+    padding-top: 3px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    .transition( ease 0.2s );
+    min-width: 24px;
+    text-align: center;
+    border-radius: 5px;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    &:hover {
+      background: darken(@accent, 1%);
+      color: @onaccent;
+      border-radius: 5px;
+    }
+  }
+
+  .social-icons .style1 {
+    padding: 2px;
+    padding-top: 3px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    min-width: 24px;
+    text-align: center;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: @accent;
+      transform: scaleY(0);
+      transform-origin: 50% 0;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      color: @header-color;
+    }
+    &:hover:before {
+      transform: scaleY(1);
+    }
+  }
+
+  @-webkit-keyframes color-flow {
+    from {
+      background-color: @accent;
+    }
+    to {
+      background-color: @header-bg;
+    }
+  }
+
+  @keyframes color-flow {
+    0% {
+      background-color: @accent;
+    }
+    50% {
+      background-color: lighten(@header-bg, 10%);
+    }
+    100% {
+      background-color: @accent;
+    }
+  }
+
+  .social-icons .style2 {
+    padding: 2px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    min-width: 24px;
+    border:1px solid @header-color;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    &:hover{
+      animation-name: color-flow;
+      animation-duration: 4s;
+    }
+
+  }
+
+  .social-icons .style3 {
+    padding: 2px;
+    padding-top: 3px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    min-width: 24px;
+    vertical-align: middle;
+    backface-visibility: hidden;
+    transition: 0.5s all ease;
+    transition-property: transform;
+    border: solid 1px transparent;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+
+    &:hover {
+      transform:rotate(360deg);
+      background: @onaccent;
+      border:1px dashed @accent;
+      color: @accent;
+    }
+  }
+
+  #util-links {
+    float: left;
+    color: @header-color;
+    font-size: 12px;
+    padding: 6px 0;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    #userlinks, #top-cart {
+      a {
+        display: inline-block;
+        color: lighten(@header-color,5%);
+      }
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    #userlinks {
+      display: inline-block;
+      @media screen and (max-width: 991px) {
+        float: none;
+      }
+      position: relative;
+      a {
+        position: relative;
+      }
+
+    }
+
+
+    #top-cart {
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      &:hover {
+        i {
+          .transform(scale(1.04));
+        }
+      }
+      i {
+        .transition(0.4s all ease);
+        font-size: 16px;
+      }
+
+
+    }
+
+  }
+  @media screen and (max-width: 600px) {
+    .td_mobile_menu_wrap {
+      min-height: 42px;
+      padding: 10px;
+      margin-bottom: 0px;
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: "\f103";
+        font-family: "FontAwesome";
+        color: darken(@onaccent,8%);
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        font-size: 18px;
+      }
+    }
+    .mobileMenu {
+      padding: 5px 8px;
+      border: none;
+      box-shadow: none;
+      background: darken(@header-bg,10%);
+      color: darken(@header-color,8%);
+      background-image: none;
+      -webkit-appearance: none;
+      position: relative;
+      min-width: 155px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,639 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Forest\n"
+"POT-Creation-Date: 2016-05-26 21:25+0530\n"
+"PO-Revision-Date: 2016-05-26 21:25+0530\n"
+"Last-Translator: Rohit Tripathi <rohit@rohitink.com>\n"
+"Language-Team: Rohit Tripathi <rohit@rohitink.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:35 comments.php:53
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:36 comments.php:54
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:37 comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:18 content-single.php:26 content.php:29
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:25 inc/template-tags.php:156 inc/template-tags.php:204
+#: inc/template-tags.php:240
+msgid "Edit"
+msgstr ""
+
+#: content.php:22
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: coverflow-posts.php:4 featured-posts.php:5
+msgid "Featured Products"
+msgstr ""
+
+#: footer.php:17
+#, php-format
+msgid "Powered by %1$s."
+msgstr ""
+
+#: footer.php:19
+msgid ". All Rights Reserved. "
+msgstr ""
+
+#: framework/layouts/content-forest.php:24
+#: framework/layouts/content-forest_3_column.php:24
+#: framework/layouts/content-grid.php:22
+#: framework/layouts/content-tromax.php:21
+msgid "Read More"
+msgstr ""
+
+#: framework/theme-functions.php:104 framework/theme-functions.php:131
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: framework/widgets/recent-posts.php:13
+msgid "Tromax Recent Posts with Thumbnails"
+msgstr ""
+
+#: framework/widgets/recent-posts.php:14
+msgid "Display your recent posts, with a Thumbnail."
+msgstr ""
+
+#: framework/widgets/recent-posts.php:23 index.php:19
+msgid "Latest Posts"
+msgstr ""
+
+#: framework/widgets/recent-posts.php:68
+msgid "Oops, there are no posts."
+msgstr ""
+
+#: framework/widgets/recent-posts.php:84
+msgid "Latest Articles"
+msgstr ""
+
+#: framework/widgets/recent-posts.php:90
+msgid "5"
+msgstr ""
+
+#: framework/widgets/recent-posts.php:94
+msgid "Title:"
+msgstr ""
+
+#: framework/widgets/recent-posts.php:97
+msgid "No. of Posts:"
+msgstr ""
+
+#: framework/woocommerce.php:138 header.php:39
+msgid "View your shopping cart"
+msgstr ""
+
+#: framework/woocommerce.php:139 header.php:40
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:57
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:58
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:101
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:111
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:120
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:129
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:138
+msgid "Footer 4"
+msgstr ""
+
+#: header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:51
+msgid "My Account"
+msgstr ""
+
+#: header.php:54
+msgid "Login / Register"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Title, Tagline & Logo"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "Upload Logo"
+msgstr ""
+
+#: inc/customizer.php:49
+msgid "Resize & Adjust Logo"
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Site Title Color"
+msgstr ""
+
+#: inc/customizer.php:97
+msgid "Site Tagline Color"
+msgstr ""
+
+#: inc/customizer.php:141
+msgid "Hide Title and Tagline."
+msgstr ""
+
+#: inc/customizer.php:162
+msgid "Main Slider"
+msgstr ""
+
+#: inc/customizer.php:168 inc/customizer.php:324
+msgid "Enable/Disable"
+msgstr ""
+
+#: inc/customizer.php:183
+msgid "Enable Slider on HomePage."
+msgstr ""
+
+#: inc/customizer.php:202
+msgid "No. of Slides(Min:0, Max: 10)"
+msgstr ""
+
+#: inc/customizer.php:205
+msgid "Save the Settings, and Reload this page to Configure the Slides."
+msgstr ""
+
+#: inc/customizer.php:217
+msgid "Slide "
+msgstr ""
+
+#: inc/customizer.php:250
+msgid "Slide Title"
+msgstr ""
+
+#: inc/customizer.php:264
+msgid "Slide Description"
+msgstr ""
+
+#: inc/customizer.php:280
+msgid "Custom Call to Action Button Text(Optional)"
+msgstr ""
+
+#: inc/customizer.php:294 inc/customizer.php:412
+msgid "Target URL"
+msgstr ""
+
+#: inc/customizer.php:318
+msgid "Custom Showcase"
+msgstr ""
+
+#: inc/customizer.php:339
+msgid "Enable Showcase on Front Page."
+msgstr ""
+
+#: inc/customizer.php:351
+msgid "ShowCase "
+msgstr ""
+
+#: inc/customizer.php:383
+msgid "Showcase Title"
+msgstr ""
+
+#: inc/customizer.php:397
+msgid "Showcase Description"
+msgstr ""
+
+#: inc/customizer.php:437 inc/customizer.php:688
+msgid "Square Boxes"
+msgstr ""
+
+#: inc/customizer.php:451 inc/customizer.php:702
+msgid "Enable Square Boxes & Posts Slider."
+msgstr ""
+
+#: inc/customizer.php:466 inc/customizer.php:717
+msgid "Title for the Boxes"
+msgstr ""
+
+#: inc/customizer.php:482
+msgid "Product Category."
+msgstr ""
+
+#: inc/customizer.php:494 inc/customizer.php:745
+msgid "3D Cube Products Slider"
+msgstr ""
+
+#: inc/customizer.php:510 inc/customizer.php:761
+msgid "Title for the Slider"
+msgstr ""
+
+#: inc/customizer.php:524 inc/customizer.php:775
+msgid "No. of Posts(Min:3, Max: 10)"
+msgstr ""
+
+#: inc/customizer.php:547 inc/customizer.php:798
+msgid "Category For Slider."
+msgstr ""
+
+#: inc/customizer.php:561 inc/customizer.php:812
+msgid "Top CoverFlow Slider"
+msgstr ""
+
+#: inc/customizer.php:575 inc/customizer.php:840
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer.php:592 inc/customizer.php:857
+msgid "Category For Image Grid"
+msgstr ""
+
+#: inc/customizer.php:607 inc/customizer.php:872
+msgid "Max No. of Posts in the Grid. Min: 5."
+msgstr ""
+
+#: inc/customizer.php:620
+msgid "Featured Posts"
+msgstr ""
+
+#: inc/customizer.php:633
+msgid "Enable Featured Posts"
+msgstr ""
+
+#: inc/customizer.php:648 inc/customizer.php:1159
+msgid "Title"
+msgstr ""
+
+#: inc/customizer.php:649
+msgid "Leave Blank to disable"
+msgstr ""
+
+#: inc/customizer.php:665 inc/customizer.php:733
+msgid "Posts Category."
+msgstr ""
+
+#: inc/customizer.php:679
+msgid "Featured Posts Showcase"
+msgstr ""
+
+#: inc/customizer.php:826
+msgid "Title for the Coverflow"
+msgstr ""
+
+#: inc/customizer.php:885
+msgid "Design & Layout"
+msgstr ""
+
+#: inc/customizer.php:891
+msgid "Blog Layout"
+msgstr ""
+
+#: inc/customizer.php:912
+msgid "Select Layout"
+msgstr ""
+
+#: inc/customizer.php:917
+msgid "Standard Blog Layout"
+msgstr ""
+
+#: inc/customizer.php:918
+msgid "Tromax Theme Layout"
+msgstr ""
+
+#: inc/customizer.php:919
+msgid "Tromax Theme Layout (3 Columns)"
+msgstr ""
+
+#: inc/customizer.php:927
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/customizer.php:941
+msgid "Disable Sidebar Everywhere."
+msgstr ""
+
+#: inc/customizer.php:956
+msgid "Disable Sidebar on Home/Blog."
+msgstr ""
+
+#: inc/customizer.php:972
+msgid "Disable Sidebar on Front Page."
+msgstr ""
+
+#: inc/customizer.php:991
+msgid "Sidebar Width"
+msgstr ""
+
+#: inc/customizer.php:992
+msgid "Min: 25%, Default: 33%, Max: 40%"
+msgstr ""
+
+#: inc/customizer.php:1030
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:1031
+msgid "Enter your Custom CSS to Modify design."
+msgstr ""
+
+#: inc/customizer.php:1065
+msgid "Custom Footer Text"
+msgstr ""
+
+#: inc/customizer.php:1066
+msgid "Enter your Own Copyright Text."
+msgstr ""
+
+#: inc/customizer.php:1094
+msgid "Choose Skin"
+msgstr ""
+
+#: inc/customizer.php:1107
+msgid "Default(blue)"
+msgstr ""
+
+#: inc/customizer.php:1108
+msgid "Orange"
+msgstr ""
+
+#: inc/customizer.php:1109
+msgid "Green"
+msgstr ""
+
+#: inc/customizer.php:1133
+msgid "Google Web Fonts"
+msgstr ""
+
+#: inc/customizer.php:1135
+msgid "Defaults: Lato, Open Sans."
+msgstr ""
+
+#: inc/customizer.php:1175
+msgid "Body"
+msgstr ""
+
+#: inc/customizer.php:1185
+msgid "Social Icons"
+msgstr ""
+
+#: inc/customizer.php:1190
+msgid "-"
+msgstr ""
+
+#: inc/customizer.php:1191
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:1192
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer.php:1193
+msgid "Google Plus"
+msgstr ""
+
+#: inc/customizer.php:1194
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer.php:1195
+msgid "RSS Feeds"
+msgstr ""
+
+#: inc/customizer.php:1196
+msgid "Vine"
+msgstr ""
+
+#: inc/customizer.php:1197
+msgid "Vimeo"
+msgstr ""
+
+#: inc/customizer.php:1198
+msgid "Youtube"
+msgstr ""
+
+#: inc/customizer.php:1199
+msgid "Flickr"
+msgstr ""
+
+#: inc/customizer.php:1214 inc/customizer.php:1227
+msgid "Icon "
+msgstr ""
+
+#: inc/customizer.php:1227
+msgid " Url"
+msgstr ""
+
+#: inc/customizer.php:1257
+msgid "Tromax Theme - Help & Support"
+msgstr ""
+
+#: inc/customizer.php:1272
+msgid "Thank You"
+msgstr ""
+
+#: inc/customizer.php:1273
+msgid ""
+"Thank You for Choosing Tromax Theme by Rohitink.com. Tromax is a Powerful "
+"Wordpress theme which also supports WooCommerce in the best possible way. It "
+"is \"as we say\" the last theme you would ever need. It has all the basic "
+"and advanced features needed to run a gorgeous looking site. For any Help "
+"related to this theme, please visit  <a href=\"https://rohitink."
+"com/2016/01/05/tromax-multipurpose-theme/\">Tromax Help & Support</a>."
+msgstr ""
+
+#: inc/jetpack.php:33
+msgid "Load more..."
+msgstr ""
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:82
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:87
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:109
+#, php-format
+msgctxt "post date"
+msgid "<i class=\"fa fa-calendar\"></i> %s"
+msgstr ""
+
+#: inc/template-tags.php:114
+#, php-format
+msgctxt "post author"
+msgid "<i class=\"fa fa-user\"></i> %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:138 inc/template-tags.php:144
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:140
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:146
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:152
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:152
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:152
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:204
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:219
+#, php-format
+msgctxt "1: date"
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:225
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform-top.php:3 searchform-top.php:4
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform-top.php:4
+msgctxt "placeholder"
+msgid "Search..."
+msgstr ""

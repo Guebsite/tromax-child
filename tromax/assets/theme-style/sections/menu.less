@@ -1,0 +1,268 @@
+/* -------- Nav Menu ---------- */
+#site-navigation {
+  float: left;
+  background: @accent;
+  width: 100%;
+  margin-bottom: 20px;
+  /*responsive widths*/
+
+  ul {
+    li {
+      @media screen and (max-width: 991px) {
+        float: none;
+        display: inline-block;
+      }
+      a {
+        padding: 7px 10px;
+        color: @onaccent;
+        font-size: 14px;
+        text-transform: none;
+        font-weight: bold;
+        .transition( 0.2s all ease );
+      }
+      &:hover {
+        a {
+          color: darken(@onaccent,10%);
+        }
+      }
+      ul li .menu-desc {
+        display: none;
+      }
+      ul.sub-menu, ul.children {
+        background: darken(@background,8%);
+        padding: 5px 0px;
+        border-radius: 5px;
+        top: 34px;
+        display: block;
+        .transition( 0.4s all ease );
+        perspective: 1000;
+        -webkit-perspective: 1000;
+        transform-origin: top;
+        -webkit-transform-origin: top;
+        transform: perspective(350px) rotateX(-10deg);
+        -webkit-transform: perspective(350px) rotateX(-10deg);
+        -moz-transform: perspective(350px) rotateX(-10deg);
+        opacity: 0;
+        visibility: hidden;
+        &:before { /* the top small arrow  */
+          content: "";
+          display: inline;
+          width: 0px;
+          height: 0px;
+          border: solid 6px transparent;
+          border-bottom: solid 6px darken(@background,8%);
+          position: absolute;
+          top: -12px;
+          left: 30px;
+        }
+
+        ul {
+          &:before {
+            border: solid 10px transparent;
+            border-right: solid 10px darken(@background,10%);
+            left: -20px;
+            top: 1px;
+          }
+        }
+        li ul {
+          transform-origin: left;
+          -webkit-transform-origin: left;
+          .transition( 0.4s all ease );
+          left: 100%;
+          top: 0;
+          opacity: 0;
+          -webkit-transform: rotateY(15deg) !important;
+          transform: rotateY(15deg) !important;
+          -moz-transform: rotateY(15deg) !important;
+          li ul {
+            display: none !important;
+          }
+        }
+        li:hover {
+          .transition(0.2s all ease);
+          /* -webkit-transition: 0.2s all ease !important; */
+          ul {
+            opacity: 1;
+            transform: rotateY(5deg) !important;
+            -webkit-transform: rotateY(5deg) !important;
+            -moz-transform: rotateY(5deg) !important;
+          }
+        }
+
+        a {
+          padding: 3px 15px;
+          font-weight: normal;
+          font-size: 13px;
+          background: none;
+          color: @content;
+          text-transform: none;
+          transition: 0.4s background ease, 0.6s padding ease;
+          &:hover {
+            background: darken(@background,13%);
+            padding-left: 15px;
+          }
+        }
+      }
+      /* li hover*/
+      &:hover {
+        .transition(0.4s all ease);
+        -webkit-transition: 0.4s all ease !important;
+        ul.sub-menu, ul.children {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          ul {
+            opacity: 0;
+          }
+          transform: rotateX(0deg);
+          -webkit-transform: rotateX(0deg);
+        }
+      }
+    }
+    .menu-item-has-children, .page_item_has_children {
+      &:after {
+        content: "\f107";
+        font-family: "FontAwesome";
+        position: absolute;
+        right: 5px;
+        top: 8px;
+        .transition(0.2s all ease);
+        color: fade(@onaccent, 70%);
+      }
+      & > a {
+        padding-right: 20px;
+      }
+      &:hover {
+        &:after {
+          .transform(rotate(180deg));
+        }
+      }
+    }
+    .page_item_has_children {
+      &:after {
+        top: 16px;
+      }
+    }
+    .page_item_has_children {
+      ul.children {
+        top: 42px;
+      }
+    }
+    ul.sub-menu, ul.children {
+      .menu-item-has-children, .page_item_has_children {
+        &:after {
+          content: "\f105";
+          right: 8px;
+          top: 4px;
+          color: fade(@onaccent,85%);
+        }
+      }
+
+    }
+    /* for the Currently active page */
+    .current_page_item > a, .current-menu-item > a, .current_page_ancestor > a {
+
+    }
+  }
+  .fa {
+    padding: 0 5px 0 0;
+  }
+  .menu-desc {
+    font-size: 12px;
+    font-weight: 300;
+    color: lighten(@accent,10%);
+    display: inline-block;
+    margin-top: -5px;
+    font-style: italic;
+    text-transform: lowercase;
+  }
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a {
+
+  }
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .slicknav_menu {
+    display: block;
+    .slicknav_menutxt {
+      margin-top: 2px;
+    }
+  }
+  #site-navigation ul.menu {
+    display: none;
+  }
+  .slicknav_nav {
+    .menu-desc {
+      display: none !important;
+    }
+    a {
+      color: darken(@content,5%);
+      &:hover {
+        background: @accent;
+        color: @onaccent;
+      }
+      .fa {
+        margin-right: 5px;
+      }
+    }
+    li:hover {
+      background: @accent;
+      a { color: @onaccent; }
+    }
+    .slicknav_arrow {
+      display: none;
+    }
+  }
+  .slicknav_nav .slicknav_row:hover {
+    background: @accent;
+  }
+  .slicknav_menu {
+    background: darken(@header-bg, 3%);
+    text-align: center;
+  }
+  .slicknav_btn {
+    background: darken(@accent,12%);
+    border: solid 1px darken(@accent,5%);
+    display: inline-block;
+    float: none;
+  }
+  .slicknav_menutxt {
+    color: @onaccent !important;
+    text-shadow: none !important;
+  }
+  .slicknav_icon-bar {
+    background-color: @onaccent !important;
+    position: relative;
+    top: 2px;
+  }
+}
+
+#site-navigation #searchicon {
+  float: right;
+  font-size: 19px;
+  color: @onaccent;
+  padding: 1px;
+  cursor: pointer;
+  .transition(0.4s all ease);
+  &:hover {
+    .transform(scale(1.2));
+  }
+  @media screen and (max-width: 600px) {
+    float: none;
+    text-align: center;
+  }
+  @media screen and (max-width: 991px) and (min-width: 601px) {
+    right: -15px;
+    top: 2px;
+    position: absolute;
+  }
+}
+#site-navigation .container {
+  position: relative;
+}
