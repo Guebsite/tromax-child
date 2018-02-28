@@ -2,7 +2,7 @@
 	
 	
 	
-	<?php echo do_shortcode( '[contact-form-7 id="149" title="Quiero Comprar"]' ); ?>
+	<?php echo do_shortcode( '[contact-form-7 id="1786" title="Quiero Comprar"]' ); ?>
 	
 	
 	
