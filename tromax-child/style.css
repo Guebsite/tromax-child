@@ -197,6 +197,12 @@ f.woocommerce ul.products li.product h2 {
 
 .page-description ul { min-height: 1px !important;}
 
+
+.woocommerce ul.products li.product .onsale, .woocommerce div.product > span.onsale {
+    background: rgba(183, 102, 158, 0.85) !important;
+    
+}
+
 /*Títulos y parrafos*/
 
 #primary-mono h1.entry-title {

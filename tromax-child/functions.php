@@ -263,3 +263,17 @@ add_action('publish_post', 'poetxmlsitemapgenerator_init');
 add_action('trashed_post', 'poetxmlsitemapgenerator_init');
 add_action('save_post',    'poetxmlsitemapgenerator_init');
 // add_action('before_delete_post','poetxmlsitemapgenerator_init');
+
+// Productos relacionados por etiqueta 
+add_filter( 'woocommerce_product_related_posts_relate_by_category', '__return_false' );
+
+// Cambio de texto Oferta por Promoción
+add_filter( 'woocommerce_sale_flash', 'dinapyme_wc_modificar_texto_oferta' );
+
+function dinapyme_wc_modificar_texto_oferta( $texto ) {
+    //cabia el valor del texto original 'Sale!' de WooCommerce por el texto '¡Promoción!'
+    return str_replace( __( 'Sale!', 'woocommerce' ), __( '¡Promoción!', 'woocommerce' ), $texto );
+}
+
+// Mostrar 24 productos por página
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
