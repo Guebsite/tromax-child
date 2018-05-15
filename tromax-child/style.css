@@ -273,7 +273,7 @@ a {
 
 /*Boton llamar ahora*/
 
-.content { }
+.content { display: block; }
 
 .control-llamar {display:block;
                  width: 280px;
@@ -291,7 +291,7 @@ a {
         padding: 10px 0px;
         border-radius: 40px;
         color: white;
-        margin-top: 8px;
+        margin-top: 7px;
         margin-left: 10px;
         background-color:#44c767;
          /*font-family: 'istok_webregular';*/  }
@@ -1044,6 +1044,9 @@ input.formnumber { width: 49% !important;
  /*ul.product-categories li { width: 31%;
                              height: 180px !important;}    
 ul.product-categories li span.count { top: -160px;}*/
+    
+    
+.content { display: none;   }
     
 #masthead div.site-branding {
     padding: 20px 0px 25px 0px;
