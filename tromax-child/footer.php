@@ -9,7 +9,8 @@
 ?>
 
 <?php include('cuadros.php');?>
-
+    
+    
 	</div><!-- #content -->
 
 	<?php get_sidebar('footer'); ?>

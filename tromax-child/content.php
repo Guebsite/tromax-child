@@ -30,7 +30,13 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+
+    
+
 	</div><!-- .entry-content -->
+	
+	
 
 	<footer class="entry-footer">
 		<?php tromax_entry_footer(); ?>
